@@ -1,0 +1,1752 @@
+"SetGlobal" :{
+"prefix":"SetGlobal",
+"body":"SetGlobal(${GlobalRegion : String};${VarName : String};${VarValue : String});"
+},
+"GetGlobal" :{
+"prefix":"GetGlobal",
+"body":"GetGlobal(${GlobalRegion : String};${VarName : String});"
+},
+"Connect;" :{
+"prefix":"Connect;",
+"body":"Connect;;"
+},
+"Disconnect;" :{
+"prefix":"Disconnect;",
+"body":"Disconnect;;"
+},
+"SetARStatus" :{
+"prefix":"SetARStatus",
+"body":"SetARStatus(${Value : Boolean});"
+},
+"GetARStatus" :{
+"prefix":"GetARStatus",
+"body":"GetARStatus;"
+},
+"SetPauseScriptOnDisconnectStatus" :{
+"prefix":"SetPauseScriptOnDisconnectStatus",
+"body":"SetPauseScriptOnDisconnectStatus(${Value : Boolean});"
+},
+"GetPauseScriptOnDisconnectStatus" :{
+"prefix":"GetPauseScriptOnDisconnectStatus",
+"body":"GetPauseScriptOnDisconnectStatus;"
+},
+"Connected" :{
+"prefix":"Connected",
+"body":"Connected;"
+},
+"CharName" :{
+"prefix":"CharName",
+"body":"CharName;"
+},
+"ProfileShardName" :{
+"prefix":"ProfileShardName",
+"body":"ProfileShardName;"
+},
+"ShardName" :{
+"prefix":"ShardName",
+"body":"ShardName;"
+},
+"Self" :{
+"prefix":"Self",
+"body":"Self;"
+},
+"SelfID" :{
+"prefix":"SelfID",
+"body":"SelfID;"
+},
+"Sex" :{
+"prefix":"Sex",
+"body":"Sex;"
+},
+"Gold" :{
+"prefix":"Gold",
+"body":"Gold;"
+},
+"ConnectedTime" :{
+"prefix":"ConnectedTime",
+"body":"ConnectedTime;"
+},
+"DisconnectedTime" :{
+"prefix":"DisconnectedTime",
+"body":"DisconnectedTime;"
+},
+"Backpack" :{
+"prefix":"Backpack",
+"body":"Backpack;"
+},
+"Ground" :{
+"prefix":"Ground",
+"body":"Ground;"
+},
+"Wait" :{
+"prefix":"Wait",
+"body":"Wait(${WaitTimeMS : Integer});"
+},
+"MsToDateTime" :{
+"prefix":"MsToDateTime",
+"body":"MsToDateTime(${TimeMS : Word});"
+},
+"Timer" :{
+"prefix":"Timer",
+"body":"Timer;"
+},
+"GetTickCount" :{
+"prefix":"GetTickCount",
+"body":"GetTickCount;"
+},
+"LineID" :{
+"prefix":"LineID",
+"body":"LineID;"
+},
+"FoundedParamID" :{
+"prefix":"FoundedParamID",
+"body":"FoundedParamID;"
+},
+"LineType" :{
+"prefix":"LineType",
+"body":"LineType;"
+},
+"LineName" :{
+"prefix":"LineName",
+"body":"LineName;"
+},
+"LineTime" :{
+"prefix":"LineTime",
+"body":"LineTime;"
+},
+"LineMsgType" :{
+"prefix":"LineMsgType",
+"body":"LineMsgType;"
+},
+"LineTextColor" :{
+"prefix":"LineTextColor",
+"body":"LineTextColor;"
+},
+"LineTextFont" :{
+"prefix":"LineTextFont",
+"body":"LineTextFont;"
+},
+"LineIndex" :{
+"prefix":"LineIndex",
+"body":"LineIndex;"
+},
+"LineCount" :{
+"prefix":"LineCount",
+"body":"LineCount;"
+},
+"AddToSystemJournal" :{
+"prefix":"AddToSystemJournal",
+"body":"AddToSystemJournal(${Text : String});"
+},
+"AddToJournal" :{
+"prefix":"AddToJournal",
+"body":"AddToJournal(${Text : String});"
+},
+"LastJournalMessage" :{
+"prefix":"LastJournalMessage",
+"body":"LastJournalMessage;"
+},
+"InJournal" :{
+"prefix":"InJournal",
+"body":"InJournal(${Str : String});"
+},
+"InJournalBetweenTimes" :{
+"prefix":"InJournalBetweenTimes",
+"body":"InJournalBetweenTimes(${Str : String};${TimeBegin : TDateTime};${TimeEnd : TDateTime});"
+},
+"Journal" :{
+"prefix":"Journal",
+"body":"Journal(${StringIndex : Integer});"
+},
+"SetJournalLine" :{
+"prefix":"SetJournalLine",
+"body":"SetJournalLine(${StringIndex : Integer};${Text : String});"
+},
+"ClearJournal;" :{
+"prefix":"ClearJournal;",
+"body":"ClearJournal;;"
+},
+"ClearSystemJournal;" :{
+"prefix":"ClearSystemJournal;",
+"body":"ClearSystemJournal;;"
+},
+"LowJournal" :{
+"prefix":"LowJournal",
+"body":"LowJournal;"
+},
+"HighJournal" :{
+"prefix":"HighJournal",
+"body":"HighJournal;"
+},
+"WaitJournalLine" :{
+"prefix":"WaitJournalLine",
+"body":"WaitJournalLine(${StartTime : TDateTime};${Str : String};${MaxWaitTimeMS : Integer});"
+},
+"WaitJournalLineSystem" :{
+"prefix":"WaitJournalLineSystem",
+"body":"WaitJournalLineSystem(${StartTime : TDateTime};${Str : String};${MaxWaitTimeMS : Integer});"
+},
+"IsObjectExists" :{
+"prefix":"IsObjectExists",
+"body":"IsObjectExists(${ObjID : Cardinal});"
+},
+"RhandLayer" :{
+"prefix":"RhandLayer",
+"body":"RhandLayer;"
+},
+"LhandLayer" :{
+"prefix":"LhandLayer",
+"body":"LhandLayer;"
+},
+"ShoesLayer" :{
+"prefix":"ShoesLayer",
+"body":"ShoesLayer;"
+},
+"PantsLayer" :{
+"prefix":"PantsLayer",
+"body":"PantsLayer;"
+},
+"ShirtLayer" :{
+"prefix":"ShirtLayer",
+"body":"ShirtLayer;"
+},
+"HatLayer" :{
+"prefix":"HatLayer",
+"body":"HatLayer;"
+},
+"GlovesLayer" :{
+"prefix":"GlovesLayer",
+"body":"GlovesLayer;"
+},
+"RingLayer" :{
+"prefix":"RingLayer",
+"body":"RingLayer;"
+},
+"TalismanLayer" :{
+"prefix":"TalismanLayer",
+"body":"TalismanLayer;"
+},
+"NeckLayer" :{
+"prefix":"NeckLayer",
+"body":"NeckLayer;"
+},
+"HairLayer" :{
+"prefix":"HairLayer",
+"body":"HairLayer;"
+},
+"WaistLayer" :{
+"prefix":"WaistLayer",
+"body":"WaistLayer;"
+},
+"TorsoLayer" :{
+"prefix":"TorsoLayer",
+"body":"TorsoLayer;"
+},
+"BraceLayer" :{
+"prefix":"BraceLayer",
+"body":"BraceLayer;"
+},
+"BeardLayer" :{
+"prefix":"BeardLayer",
+"body":"BeardLayer;"
+},
+"TorsoHLayer" :{
+"prefix":"TorsoHLayer",
+"body":"TorsoHLayer;"
+},
+"EarLayer" :{
+"prefix":"EarLayer",
+"body":"EarLayer;"
+},
+"ArmsLayer" :{
+"prefix":"ArmsLayer",
+"body":"ArmsLayer;"
+},
+"CloakLayer" :{
+"prefix":"CloakLayer",
+"body":"CloakLayer;"
+},
+"BpackLayer" :{
+"prefix":"BpackLayer",
+"body":"BpackLayer;"
+},
+"RobeLayer" :{
+"prefix":"RobeLayer",
+"body":"RobeLayer;"
+},
+"EggsLayer" :{
+"prefix":"EggsLayer",
+"body":"EggsLayer;"
+},
+"LegsLayer" :{
+"prefix":"LegsLayer",
+"body":"LegsLayer;"
+},
+"HorseLayer" :{
+"prefix":"HorseLayer",
+"body":"HorseLayer;"
+},
+"RstkLayer" :{
+"prefix":"RstkLayer",
+"body":"RstkLayer;"
+},
+"NRstkLayer" :{
+"prefix":"NRstkLayer",
+"body":"NRstkLayer;"
+},
+"SellLayer" :{
+"prefix":"SellLayer",
+"body":"SellLayer;"
+},
+"BankLayer" :{
+"prefix":"BankLayer",
+"body":"BankLayer;"
+},
+"BMSearch" :{
+"prefix":"BMSearch",
+"body":"BMSearch(${StartPos : Integer};${const S : String};${const P : String});"
+},
+"IsFigureText" :{
+"prefix":"IsFigureText",
+"body":"IsFigureText(${s : String});"
+},
+"AnsiByteArrayToString" :{
+"prefix":"AnsiByteArrayToString",
+"body":"AnsiByteArrayToString(${AnsiBytes : array of byte});"
+},
+"StrBreakApart" :{
+"prefix":"StrBreakApart",
+"body":"StrBreakApart(${const S : String};${Delimeter : String};${Parts : TStrings});"
+},
+"RandomRange" :{
+"prefix":"RandomRange",
+"body":"RandomRange(${const AFrom : Integer};${ATo : Integer});"
+},
+"ShowMessage" :{
+"prefix":"ShowMessage",
+"body":"ShowMessage(${const Msg : String});"
+},
+"Sign" :{
+"prefix":"Sign",
+"body":"Sign(${const AValue : Integer});"
+},
+"PlayWav" :{
+"prefix":"PlayWav",
+"body":"PlayWav(${FileName : String});"
+},
+"SetEventProc" :{
+"prefix":"SetEventProc",
+"body":"SetEventProc(${Eventname : TPacketEvent};${Procname : String});"
+},
+"HTTP_Get" :{
+"prefix":"HTTP_Get",
+"body":"HTTP_Get(${URL : String});"
+},
+"HTTP_Post" :{
+"prefix":"HTTP_Post",
+"body":"HTTP_Post(${URL : String};${PostData : TStringList});"
+},
+"HTTP_Body" :{
+"prefix":"HTTP_Body",
+"body":"HTTP_Body;"
+},
+"HTTP_Header" :{
+"prefix":"HTTP_Header",
+"body":"HTTP_Header;"
+},
+"ICQConnected" :{
+"prefix":"ICQConnected",
+"body":"ICQConnected;"
+},
+"ICQConnect" :{
+"prefix":"ICQConnect",
+"body":"ICQConnect(${UIN : String};${password : String});"
+},
+"ICQDisconnect;" :{
+"prefix":"ICQDisconnect;",
+"body":"ICQDisconnect;;"
+},
+"ICQSetXStatus" :{
+"prefix":"ICQSetXStatus",
+"body":"ICQSetXStatus(${Num : Byte});"
+},
+"ICQSetStatus" :{
+"prefix":"ICQSetStatus",
+"body":"ICQSetStatus(${Num : Byte});"
+},
+"ICQSendText" :{
+"prefix":"ICQSendText",
+"body":"ICQSendText(${DestinationUIN : String};${Text : String});"
+},
+"Alarm;" :{
+"prefix":"Alarm;",
+"body":"Alarm;;"
+},
+"MessageBoxTimeOut" :{
+"prefix":"MessageBoxTimeOut",
+"body":"MessageBoxTimeOut(${Msg : String};${DlgType : TMsgDlgType};${Buttons : TMsgDlgButtons};${TimeOutInterval : Cardinal});"
+},
+"IRCConnect" :{
+"prefix":"IRCConnect",
+"body":"IRCConnect(${Host : String};${Port : Word});"
+},
+"IRCDisconnect;" :{
+"prefix":"IRCDisconnect;",
+"body":"IRCDisconnect;;"
+},
+"IRCConnected" :{
+"prefix":"IRCConnected",
+"body":"IRCConnected;"
+},
+"IRCSay" :{
+"prefix":"IRCSay",
+"body":"IRCSay(${ATarget : String};${AMsg : String});"
+},
+"IRCJoin" :{
+"prefix":"IRCJoin",
+"body":"IRCJoin(${AChannel : String};${AKey : String = '' });"
+},
+"IRCRaw" :{
+"prefix":"IRCRaw",
+"body":"IRCRaw(${ALine: String});"
+},
+"IRCSetNickName" :{
+"prefix":"IRCSetNickName",
+"body":"IRCSetNickName(${NickName : String});"
+},
+"UseProxy" :{
+"prefix":"UseProxy",
+"body":"UseProxy;"
+},
+"ProxyIP" :{
+"prefix":"ProxyIP",
+"body":"ProxyIP;"
+},
+"ProxyPort" :{
+"prefix":"ProxyPort",
+"body":"ProxyPort;"
+},
+"ProfileName" :{
+"prefix":"ProfileName",
+"body":"ProfileName;"
+},
+"ChangeProfile" :{
+"prefix":"ChangeProfile",
+"body":"ChangeProfile(${Name : String});"
+},
+"StealthInfo" :{
+"prefix":"StealthInfo",
+"body":"StealthInfo;"
+},
+"StealthPath" :{
+"prefix":"StealthPath",
+"body":"StealthPath;"
+},
+"CurrentScriptPath" :{
+"prefix":"CurrentScriptPath",
+"body":"CurrentScriptPath;"
+},
+"StealthProfilePath" :{
+"prefix":"StealthProfilePath",
+"body":"StealthProfilePath;"
+},
+"ShardPath" :{
+"prefix":"ShardPath",
+"body":"ShardPath;"
+},
+"PauseCurrentScript;" :{
+"prefix":"PauseCurrentScript;",
+"body":"PauseCurrentScript;;"
+},
+"Halt;" :{
+"prefix":"Halt;",
+"body":"Halt;;"
+},
+"CurrentLine" :{
+"prefix":"CurrentLine",
+"body":"CurrentLine;"
+},
+"WinExec" :{
+"prefix":"WinExec",
+"body":"WinExec(${FileName : String};${Parameters : String = ''});"
+},
+"CharTitle" :{
+"prefix":"CharTitle",
+"body":"CharTitle;"
+},
+"Armor" :{
+"prefix":"Armor",
+"body":"Armor;"
+},
+"Weight" :{
+"prefix":"Weight",
+"body":"Weight;"
+},
+"MaxWeight" :{
+"prefix":"MaxWeight",
+"body":"MaxWeight;"
+},
+"Race" :{
+"prefix":"Race",
+"body":"Race;"
+},
+"WorldNum" :{
+"prefix":"WorldNum",
+"body":"WorldNum;"
+},
+"PetsCurrent" :{
+"prefix":"PetsCurrent",
+"body":"PetsCurrent;"
+},
+"PetsMax" :{
+"prefix":"PetsMax",
+"body":"PetsMax;"
+},
+"FireResist" :{
+"prefix":"FireResist",
+"body":"FireResist;"
+},
+"ColdResist" :{
+"prefix":"ColdResist",
+"body":"ColdResist;"
+},
+"PoisonResist" :{
+"prefix":"PoisonResist",
+"body":"PoisonResist;"
+},
+"EnergyResist" :{
+"prefix":"EnergyResist",
+"body":"EnergyResist;"
+},
+"LastContainer" :{
+"prefix":"LastContainer",
+"body":"LastContainer;"
+},
+"LastTarget" :{
+"prefix":"LastTarget",
+"body":"LastTarget;"
+},
+"LastAttack" :{
+"prefix":"LastAttack",
+"body":"LastAttack;"
+},
+"LastStatus" :{
+"prefix":"LastStatus",
+"body":"LastStatus;"
+},
+"LastObject" :{
+"prefix":"LastObject",
+"body":"LastObject;"
+},
+"Hidden" :{
+"prefix":"Hidden",
+"body":"Hidden;"
+},
+"Poisoned" :{
+"prefix":"Poisoned",
+"body":"Poisoned;"
+},
+"Paralyzed" :{
+"prefix":"Paralyzed",
+"body":"Paralyzed;"
+},
+"Dead" :{
+"prefix":"Dead",
+"body":"Dead;"
+},
+"WarMode" :{
+"prefix":"WarMode",
+"body":"WarMode;"
+},
+"WarTargetID" :{
+"prefix":"WarTargetID",
+"body":"WarTargetID;"
+},
+"SetWarMode" :{
+"prefix":"SetWarMode",
+"body":"SetWarMode(${Value : Boolean});"
+},
+"Attack" :{
+"prefix":"Attack",
+"body":"Attack(${ObjdID : Cardinal});"
+},
+"UseSelfPaperdollScroll;" :{
+"prefix":"UseSelfPaperdollScroll;",
+"body":"UseSelfPaperdollScroll;;"
+},
+"UseOtherPaperdollScroll" :{
+"prefix":"UseOtherPaperdollScroll",
+"body":"UseOtherPaperdollScroll(${ID : Cardinal});"
+},
+"GetName" :{
+"prefix":"GetName",
+"body":"GetName(${ObjID : Cardinal});"
+},
+"Str" :{
+"prefix":"Str",
+"body":"Str;"
+},
+"Int" :{
+"prefix":"Int",
+"body":"Int;"
+},
+"Dex" :{
+"prefix":"Dex",
+"body":"Dex;"
+},
+"Life" :{
+"prefix":"Life",
+"body":"Life;"
+},
+"HP" :{
+"prefix":"HP",
+"body":"HP;"
+},
+"Mana" :{
+"prefix":"Mana",
+"body":"Mana;"
+},
+"Stam" :{
+"prefix":"Stam",
+"body":"Stam;"
+},
+"MaxLife" :{
+"prefix":"MaxLife",
+"body":"MaxLife;"
+},
+"MaxHP" :{
+"prefix":"MaxHP",
+"body":"MaxHP;"
+},
+"MaxMana" :{
+"prefix":"MaxMana",
+"body":"MaxMana;"
+},
+"MaxStam" :{
+"prefix":"MaxStam",
+"body":"MaxStam;"
+},
+"Luck" :{
+"prefix":"Luck",
+"body":"Luck;"
+},
+"ExtendedInfo" :{
+"prefix":"ExtendedInfo",
+"body":"ExtendedInfo;"
+},
+"GetParent" :{
+"prefix":"GetParent",
+"body":"GetParent(${ObjID : Cardinal});"
+},
+"ObjAtLayer" :{
+"prefix":"ObjAtLayer",
+"body":"ObjAtLayer(${LayerType : Byte});"
+},
+"ObjAtLayerEx" :{
+"prefix":"ObjAtLayerEx",
+"body":"ObjAtLayerEx(${LayerType : Byte};${PlayerID : Cardinal});"
+},
+"GetLayer" :{
+"prefix":"GetLayer",
+"body":"GetLayer(${Obj : Cardinal});"
+},
+"TargetPresent" :{
+"prefix":"TargetPresent",
+"body":"TargetPresent;"
+},
+"TargetID" :{
+"prefix":"TargetID",
+"body":"TargetID;"
+},
+"WaitForTarget" :{
+"prefix":"WaitForTarget",
+"body":"WaitForTarget(${MaxWaitTimeMS : Integer});"
+},
+"CancelTarget;" :{
+"prefix":"CancelTarget;",
+"body":"CancelTarget;;"
+},
+"TargetToObject" :{
+"prefix":"TargetToObject",
+"body":"TargetToObject(${ObjectID : Cardinal});"
+},
+"TargetToXYZ" :{
+"prefix":"TargetToXYZ",
+"body":"TargetToXYZ(${X : Word};${Y : Word};${Z : ShortInt});"
+},
+"TargetToTile" :{
+"prefix":"TargetToTile",
+"body":"TargetToTile(${TileModel : Word};${X : Integer};${Y : Integer};${Z : Integer});"
+},
+"WaitTargetObject" :{
+"prefix":"WaitTargetObject",
+"body":"WaitTargetObject(${ObjID : Cardinal});"
+},
+"WaitTargetTile" :{
+"prefix":"WaitTargetTile",
+"body":"WaitTargetTile(${Tile : Word};${X : Integer};${Y : Integer};${Z : Integer});"
+},
+"WaitTargetXYZ" :{
+"prefix":"WaitTargetXYZ",
+"body":"WaitTargetXYZ(${X : Integer};${Y : Integer};${Z : Integer});"
+},
+"WaitTargetSelf;" :{
+"prefix":"WaitTargetSelf;",
+"body":"WaitTargetSelf;;"
+},
+"WaitTargetType" :{
+"prefix":"WaitTargetType",
+"body":"WaitTargetType(${ObjType : Word});"
+},
+"CancelWaitTarget;" :{
+"prefix":"CancelWaitTarget;",
+"body":"CancelWaitTarget;;"
+},
+"WaitTargetGround" :{
+"prefix":"WaitTargetGround",
+"body":"WaitTargetGround(${ObjType : Word});"
+},
+"WaitTargetLast;" :{
+"prefix":"WaitTargetLast;",
+"body":"WaitTargetLast;;"
+},
+"UOSay" :{
+"prefix":"UOSay",
+"body":"UOSay(${Text : String});"
+},
+"UOSayColor" :{
+"prefix":"UOSayColor",
+"body":"UOSayColor(${Text : String};${Color : Word});"
+},
+"ConsoleEntryReply" :{
+"prefix":"ConsoleEntryReply",
+"body":"ConsoleEntryReply(${Text : String});"
+},
+"ConsoleEntryUnicodeReply" :{
+"prefix":"ConsoleEntryUnicodeReply",
+"body":"ConsoleEntryUnicodeReply(${Text : String});"
+},
+"UseSkill" :{
+"prefix":"UseSkill",
+"body":"UseSkill(${SkillName : String});"
+},
+"SkillLockState" :{
+"prefix":"SkillLockState",
+"body":"SkillLockState(${SkillName : String};${skillState : Byte});"
+},
+"GetSkillValue" :{
+"prefix":"GetSkillValue",
+"body":"GetSkillValue(${SkillName : String});"
+},
+"GetSkillCurrentValue" :{
+"prefix":"GetSkillCurrentValue",
+"body":"GetSkillCurrentValue(${SkillName : String});"
+},
+"GetSkillCap" :{
+"prefix":"GetSkillCap",
+"body":"GetSkillCap(${SkillName : String});"
+},
+"UseObject" :{
+"prefix":"UseObject",
+"body":"UseObject(${ObjectID : Cardinal});"
+},
+"UseType" :{
+"prefix":"UseType",
+"body":"UseType(${ObjType : Word};${Color : Word});"
+},
+"UseFromGround" :{
+"prefix":"UseFromGround",
+"body":"UseFromGround(${ObjType : Word};${Color : Word});"
+},
+"ClickOnObject" :{
+"prefix":"ClickOnObject",
+"body":"ClickOnObject(${ObjectID : Cardinal});"
+},
+"Cast" :{
+"prefix":"Cast",
+"body":"Cast(${SpellName : String});"
+},
+"GetActiveAbility" :{
+"prefix":"GetActiveAbility",
+"body":"GetActiveAbility;"
+},
+"UsePrimaryAbility;" :{
+"prefix":"UsePrimaryAbility;",
+"body":"UsePrimaryAbility;;"
+},
+"ToggleFly;" :{
+"prefix":"ToggleFly;",
+"body":"ToggleFly;;"
+},
+"UseSecondaryAbility;" :{
+"prefix":"UseSecondaryAbility;",
+"body":"UseSecondaryAbility;;"
+},
+"ClearJournalIgnore;" :{
+"prefix":"ClearJournalIgnore;",
+"body":"ClearJournalIgnore;;"
+},
+"ClearChatUserIgnore;" :{
+"prefix":"ClearChatUserIgnore;",
+"body":"ClearChatUserIgnore;;"
+},
+"AddJournalIgnore" :{
+"prefix":"AddJournalIgnore",
+"body":"AddJournalIgnore(${Str : String});"
+},
+"AddChatUserIgnore" :{
+"prefix":"AddChatUserIgnore",
+"body":"AddChatUserIgnore(${User : String});"
+},
+"FindType" :{
+"prefix":"FindType",
+"body":"FindType(${ObjType : Word};${Container : Cardinal});"
+},
+"FindTypeEx" :{
+"prefix":"FindTypeEx",
+"body":"FindTypeEx(${ObjType : Word};${Color : Word};${Container : Cardinal};${InSub : Boolean});"
+},
+"FindTypesArrayEx" :{
+"prefix":"FindTypesArrayEx",
+"body":"FindTypesArrayEx(${ObjTypes : array of Word};${Colors : array of Word};${Containers : array of Cardinal};${InSub : Boolean});"
+},
+"FindNotoriety" :{
+"prefix":"FindNotoriety",
+"body":"FindNotoriety(${ObjType : Word};${Notoriety : Byte});"
+},
+"FindAtCoord" :{
+"prefix":"FindAtCoord",
+"body":"FindAtCoord(${X : Word};${Y : Word});"
+},
+"Ignore" :{
+"prefix":"Ignore",
+"body":"Ignore(${ObjID : Cardinal});"
+},
+"IgnoreOff" :{
+"prefix":"IgnoreOff",
+"body":"IgnoreOff(${ObjID : Cardinal});"
+},
+"IgnoreReset;" :{
+"prefix":"IgnoreReset;",
+"body":"IgnoreReset;;"
+},
+"GetIgnoreList" :{
+"prefix":"GetIgnoreList",
+"body":"GetIgnoreList(${var UserList : TStringList});"
+},
+"GetFindedList" :{
+"prefix":"GetFindedList",
+"body":"GetFindedList(${var UserList : TStringList});"
+},
+"FindItem" :{
+"prefix":"FindItem",
+"body":"FindItem;"
+},
+"FindCount" :{
+"prefix":"FindCount",
+"body":"FindCount;"
+},
+"FindQuantity" :{
+"prefix":"FindQuantity",
+"body":"FindQuantity;"
+},
+"FindFullQuantity" :{
+"prefix":"FindFullQuantity",
+"body":"FindFullQuantity;"
+},
+"PredictedX" :{
+"prefix":"PredictedX",
+"body":"PredictedX;"
+},
+"PredictedY" :{
+"prefix":"PredictedY",
+"body":"PredictedY;"
+},
+"PredictedZ" :{
+"prefix":"PredictedZ",
+"body":"PredictedZ;"
+},
+"PredictedDirection" :{
+"prefix":"PredictedDirection",
+"body":"PredictedDirection;"
+},
+"GetX" :{
+"prefix":"GetX",
+"body":"GetX(${ObjID : Cardinal});"
+},
+"GetY" :{
+"prefix":"GetY",
+"body":"GetY(${ObjID : Cardinal});"
+},
+"GetZ" :{
+"prefix":"GetZ",
+"body":"GetZ(${ObjID : Cardinal});"
+},
+"GetAltName" :{
+"prefix":"GetAltName",
+"body":"GetAltName(${ObjID : Cardinal});"
+},
+"GetTitle" :{
+"prefix":"GetTitle",
+"body":"GetTitle(${ObjID : Cardinal});"
+},
+"GetCliloc" :{
+"prefix":"GetCliloc",
+"body":"GetCliloc(${ObjID : Cardinal});"
+},
+"GetType" :{
+"prefix":"GetType",
+"body":"GetType(${ObjID : Cardinal});"
+},
+"GetQuantity" :{
+"prefix":"GetQuantity",
+"body":"GetQuantity(${ObjID : Cardinal});"
+},
+"GetPrice" :{
+"prefix":"GetPrice",
+"body":"GetPrice(${ObjID : Cardinal});"
+},
+"GetDirection" :{
+"prefix":"GetDirection",
+"body":"GetDirection(${ObjID : Cardinal});"
+},
+"GetDistance" :{
+"prefix":"GetDistance",
+"body":"GetDistance(${ObjID : Cardinal});"
+},
+"GetColor" :{
+"prefix":"GetColor",
+"body":"GetColor(${ObjID : Cardinal});"
+},
+"GetStr" :{
+"prefix":"GetStr",
+"body":"GetStr(${ObjID : Cardinal});"
+},
+"GetInt" :{
+"prefix":"GetInt",
+"body":"GetInt(${ObjID : Cardinal});"
+},
+"GetDex" :{
+"prefix":"GetDex",
+"body":"GetDex(${ObjID : Cardinal});"
+},
+"GetHP" :{
+"prefix":"GetHP",
+"body":"GetHP(${ObjID : Cardinal});"
+},
+"GetMaxHP" :{
+"prefix":"GetMaxHP",
+"body":"GetMaxHP(${ObjID : Cardinal});"
+},
+"GetMana" :{
+"prefix":"GetMana",
+"body":"GetMana(${ObjID : Cardinal});"
+},
+"GetMaxMana" :{
+"prefix":"GetMaxMana",
+"body":"GetMaxMana(${ObjID : Cardinal});"
+},
+"GetStam" :{
+"prefix":"GetStam",
+"body":"GetStam(${ObjID : Cardinal});"
+},
+"GetMaxStam" :{
+"prefix":"GetMaxStam",
+"body":"GetMaxStam(${ObjID : Cardinal});"
+},
+"GetNotoriety" :{
+"prefix":"GetNotoriety",
+"body":"GetNotoriety(${ObjID : Cardinal});"
+},
+"IsWarMode" :{
+"prefix":"IsWarMode",
+"body":"IsWarMode(${ObjID : Cardinal});"
+},
+"IsNPC" :{
+"prefix":"IsNPC",
+"body":"IsNPC(${ObjID : Cardinal});"
+},
+"IsDead" :{
+"prefix":"IsDead",
+"body":"IsDead(${ObjID : Cardinal});"
+},
+"IsRunning" :{
+"prefix":"IsRunning",
+"body":"IsRunning(${ObjID : Cardinal});"
+},
+"IsContainer" :{
+"prefix":"IsContainer",
+"body":"IsContainer(${ObjID : Cardinal});"
+},
+"IsHidden" :{
+"prefix":"IsHidden",
+"body":"IsHidden(${ObjID : Cardinal});"
+},
+"IsMovable" :{
+"prefix":"IsMovable",
+"body":"IsMovable(${ObjID : Cardinal});"
+},
+"IsYellowHits" :{
+"prefix":"IsYellowHits",
+"body":"IsYellowHits(${ObjID : Cardinal});"
+},
+"IsPoisoned" :{
+"prefix":"IsPoisoned",
+"body":"IsPoisoned(${ObjID : Cardinal});"
+},
+"IsParalyzed" :{
+"prefix":"IsParalyzed",
+"body":"IsParalyzed(${ObjID : Cardinal});"
+},
+"IsFemale" :{
+"prefix":"IsFemale",
+"body":"IsFemale(${ObjID : Cardinal});"
+},
+"DragItem" :{
+"prefix":"DragItem",
+"body":"DragItem(${ItemID : Cardinal};${Count : Integer});"
+},
+"DropItem" :{
+"prefix":"DropItem",
+"body":"DropItem(${MoveIntoID : Cardinal};${X : Integer};${Y : Integer};${Z : Integer});"
+},
+"MoveItem" :{
+"prefix":"MoveItem",
+"body":"MoveItem(${ItemID : Cardinal};${Count : Integer};${MoveIntoID : Cardinal};${X : Integer};${Y : Integer};${Z : Integer});"
+},
+"Grab" :{
+"prefix":"Grab",
+"body":"Grab(${ItemID : Cardinal};${Count : Integer});"
+},
+"Drop" :{
+"prefix":"Drop",
+"body":"Drop(${ItemID : Cardinal};${Count : Integer};${X : Integer};${Y : Integer};${Z : Integer});"
+},
+"DropHere" :{
+"prefix":"DropHere",
+"body":"DropHere(${ItemID : Cardinal});"
+},
+"MoveItems" :{
+"prefix":"MoveItems",
+"body":"MoveItems(${Container : Cardinal};${ItemsType : Word};${ItemsColor : Word};${MoveIntoID : Cardinal};${X : Integer};${Y : Integer};${Z : Integer};${DelayMS : Integer});"
+},
+"MoveItemsEx" :{
+"prefix":"MoveItemsEx",
+"body":"MoveItemsEx(${Container : Cardinal};${ItemsType : Word};${ItemsColor : Word};${MoveIntoID : Cardinal};${X : Integer};${Y : Integer};${Z : Integer};${DelayMS : Integer};${MaxItems : Integer});"
+},
+"RequestContextMenu" :{
+"prefix":"RequestContextMenu",
+"body":"RequestContextMenu(${ID : Cardinal});"
+},
+"SetContextMenuHook" :{
+"prefix":"SetContextMenuHook",
+"body":"SetContextMenuHook(${MenuID : Cardinal};${EntryNumber : Byte});"
+},
+"IsTrade" :{
+"prefix":"IsTrade",
+"body":"IsTrade;"
+},
+"GetTradeContainer" :{
+"prefix":"GetTradeContainer",
+"body":"GetTradeContainer(${TradeNum : Byte};${Num : Byte});"
+},
+"TradeCheck" :{
+"prefix":"TradeCheck",
+"body":"TradeCheck(${TradeNum : Byte};${Num : Byte});"
+},
+"GetTradeOpponent" :{
+"prefix":"GetTradeOpponent",
+"body":"GetTradeOpponent(${TradeNum : Byte});"
+},
+"GetTradeOpponentName" :{
+"prefix":"GetTradeOpponentName",
+"body":"GetTradeOpponentName(${TradeNum : Byte});"
+},
+"TradeCount" :{
+"prefix":"TradeCount",
+"body":"TradeCount;"
+},
+"ConfirmTrade" :{
+"prefix":"ConfirmTrade",
+"body":"ConfirmTrade(${TradeNum : Byte});"
+},
+"CancelTrade" :{
+"prefix":"CancelTrade",
+"body":"CancelTrade(${TradeNum : Byte});"
+},
+"WaitMenu" :{
+"prefix":"WaitMenu",
+"body":"WaitMenu(${UP : String};${UC : String});"
+},
+"CloseMenu;" :{
+"prefix":"CloseMenu;",
+"body":"CloseMenu;;"
+},
+"AutoMenu" :{
+"prefix":"AutoMenu",
+"body":"AutoMenu(${UP : String};${UC : String});"
+},
+"CancelMenu;" :{
+"prefix":"CancelMenu;",
+"body":"CancelMenu;;"
+},
+"MenuHookPresent" :{
+"prefix":"MenuHookPresent",
+"body":"MenuHookPresent;"
+},
+"MenuPresent" :{
+"prefix":"MenuPresent",
+"body":"MenuPresent;"
+},
+"WaitGump" :{
+"prefix":"WaitGump",
+"body":"WaitGump(${Value : String});"
+},
+"GumpAutoTextEntry" :{
+"prefix":"GumpAutoTextEntry",
+"body":"GumpAutoTextEntry(${TextEntryID : Integer};${Value : String});"
+},
+"GumpAutoRadiobutton" :{
+"prefix":"GumpAutoRadiobutton",
+"body":"GumpAutoRadiobutton(${RadiobuttonID : Integer};${Value : Integer});"
+},
+"GumpAutoCheckBox" :{
+"prefix":"GumpAutoCheckBox",
+"body":"GumpAutoCheckBox(${CheckBoxID : Integer};${Value : Integer});"
+},
+"NumGumpButton" :{
+"prefix":"NumGumpButton",
+"body":"NumGumpButton(${GumpIndex : Word};${Value : Integer});"
+},
+"NumGumpTextEntry" :{
+"prefix":"NumGumpTextEntry",
+"body":"NumGumpTextEntry(${GumpIndex : Word};${TextEntryID : Integer};${Value : String});"
+},
+"NumGumpRadiobutton" :{
+"prefix":"NumGumpRadiobutton",
+"body":"NumGumpRadiobutton(${GumpIndex : Word};${RadiobuttonID : Integer};${Value : Integer});"
+},
+"NumGumpCheckBox" :{
+"prefix":"NumGumpCheckBox",
+"body":"NumGumpCheckBox(${GumpIndex : Word};${CBID : Integer};${Value : Integer});"
+},
+"WaitTextEntry" :{
+"prefix":"WaitTextEntry",
+"body":"WaitTextEntry(${Value : String});"
+},
+"GetGumpsCount" :{
+"prefix":"GetGumpsCount",
+"body":"GetGumpsCount;"
+},
+"IsGump" :{
+"prefix":"IsGump",
+"body":"IsGump;"
+},
+"GetGumpSerial" :{
+"prefix":"GetGumpSerial",
+"body":"GetGumpSerial(${GumpIndex : Word});"
+},
+"GetGumpID" :{
+"prefix":"GetGumpID",
+"body":"GetGumpID(${GumpIndex : Word});"
+},
+"IsGumpCanBeClosed" :{
+"prefix":"IsGumpCanBeClosed",
+"body":"IsGumpCanBeClosed(${GumpIndex : Word});"
+},
+"GetGumpTextLines" :{
+"prefix":"GetGumpTextLines",
+"body":"GetGumpTextLines(${GumpIndex : Word};${var TL : TStringList});"
+},
+"GetGumpFullLines" :{
+"prefix":"GetGumpFullLines",
+"body":"GetGumpFullLines(${GumpIndex : Word};${var TL : TStringList});"
+},
+"GetGumpShortLines" :{
+"prefix":"GetGumpShortLines",
+"body":"GetGumpShortLines(${GumpIndex : Word};${var TL : TStringList});"
+},
+"GetGumpButtonsDescription" :{
+"prefix":"GetGumpButtonsDescription",
+"body":"GetGumpButtonsDescription(${GumpIndex : Word};${var TL : TStringList});"
+},
+"GetGumpInfo" :{
+"prefix":"GetGumpInfo",
+"body":"GetGumpInfo(${GumpIndex : Word};${var GumpInfo : TGumpInfo});"
+},
+"CloseSimpleGump" :{
+"prefix":"CloseSimpleGump",
+"body":"CloseSimpleGump(${GumpIndex : Word});"
+},
+"AddGumpIgnoreBySerial" :{
+"prefix":"AddGumpIgnoreBySerial",
+"body":"AddGumpIgnoreBySerial(${Serial : Cardinal});"
+},
+"AddGumpIgnoreByID" :{
+"prefix":"AddGumpIgnoreByID",
+"body":"AddGumpIgnoreByID(${ID : Cardinal});"
+},
+"ClearGumpsIgnore;" :{
+"prefix":"ClearGumpsIgnore;",
+"body":"ClearGumpsIgnore;;"
+},
+"WearItem" :{
+"prefix":"WearItem",
+"body":"WearItem(${Layer : Byte};${Obj : Cardinal});"
+},
+"Disarm" :{
+"prefix":"Disarm",
+"body":"Disarm;"
+},
+"Equip" :{
+"prefix":"Equip",
+"body":"Equip(${Layer : Byte};${Obj : Cardinal});"
+},
+"Equipt" :{
+"prefix":"Equipt",
+"body":"Equipt(${Layer : Byte};${ObjType : Word});"
+},
+"Unequip" :{
+"prefix":"Unequip",
+"body":"Unequip(${Layer : Byte});"
+},
+"Undress" :{
+"prefix":"Undress",
+"body":"Undress;"
+},
+"DressSavedSet" :{
+"prefix":"DressSavedSet",
+"body":"DressSavedSet;"
+},
+"EquipDressSet" :{
+"prefix":"EquipDressSet",
+"body":"EquipDressSet;"
+},
+"SetDress;" :{
+"prefix":"SetDress;",
+"body":"SetDress;;"
+},
+"Count" :{
+"prefix":"Count",
+"body":"Count(${ObjType : Word});"
+},
+"CountGround" :{
+"prefix":"CountGround",
+"body":"CountGround(${ObjType : Word});"
+},
+"CountEx" :{
+"prefix":"CountEx",
+"body":"CountEx(${ObjType : Word};${Color : Word};${Container : Cardinal});"
+},
+"BP" :{
+"prefix":"BP",
+"body":"BP;"
+},
+"BM" :{
+"prefix":"BM",
+"body":"BM;"
+},
+"GA" :{
+"prefix":"GA",
+"body":"GA;"
+},
+"GS" :{
+"prefix":"GS",
+"body":"GS;"
+},
+"MR" :{
+"prefix":"MR",
+"body":"MR;"
+},
+"NS" :{
+"prefix":"NS",
+"body":"NS;"
+},
+"SA" :{
+"prefix":"SA",
+"body":"SA;"
+},
+"SS" :{
+"prefix":"SS",
+"body":"SS;"
+},
+"BPCount" :{
+"prefix":"BPCount",
+"body":"BPCount;"
+},
+"BMCount" :{
+"prefix":"BMCount",
+"body":"BMCount;"
+},
+"GACount" :{
+"prefix":"GACount",
+"body":"GACount;"
+},
+"GSCount" :{
+"prefix":"GSCount",
+"body":"GSCount;"
+},
+"MRCount" :{
+"prefix":"MRCount",
+"body":"MRCount;"
+},
+"NSCount" :{
+"prefix":"NSCount",
+"body":"NSCount;"
+},
+"SACount" :{
+"prefix":"SACount",
+"body":"SACount;"
+},
+"SSCount" :{
+"prefix":"SSCount",
+"body":"SSCount;"
+},
+"AutoBuy" :{
+"prefix":"AutoBuy",
+"body":"AutoBuy(${ItemType : Word};${ItemColor : Word};${Quantity : Word});"
+},
+"AutoBuyEx" :{
+"prefix":"AutoBuyEx",
+"body":"AutoBuyEx(${ItemType : Word};${ItemColor : Word};${Quantity : Word};${Price : Cardinal};${Name : String});"
+},
+"GetShopList" :{
+"prefix":"GetShopList",
+"body":"GetShopList(${var List : TStringList});"
+},
+"ClearShopList;" :{
+"prefix":"ClearShopList;",
+"body":"ClearShopList;;"
+},
+"GetAutoBuyDelay" :{
+"prefix":"GetAutoBuyDelay",
+"body":"GetAutoBuyDelay;"
+},
+"SetAutoBuyDelay" :{
+"prefix":"SetAutoBuyDelay",
+"body":"SetAutoBuyDelay(${Value : Word});"
+},
+"AutoSell" :{
+"prefix":"AutoSell",
+"body":"AutoSell(${ItemType : Word};${ItemColor : Word};${Quantity : Word});"
+},
+"GetAutoSellDelay" :{
+"prefix":"GetAutoSellDelay",
+"body":"GetAutoSellDelay;"
+},
+"SetAutoSellDelay" :{
+"prefix":"SetAutoSellDelay",
+"body":"SetAutoSellDelay(${Value : Word});"
+},
+"GetTileFlags" :{
+"prefix":"GetTileFlags",
+"body":"GetTileFlags(${Group : Byte};${Tile : Word});"
+},
+"ConvertIntegerToFlags" :{
+"prefix":"ConvertIntegerToFlags",
+"body":"ConvertIntegerToFlags(${group : Byte};${I : Cardinal});"
+},
+"GetLayerCount" :{
+"prefix":"GetLayerCount",
+"body":"GetLayerCount(${x : Word};${y : Word};${WorldNum : Byte});"
+},
+"GetLandTileData" :{
+"prefix":"GetLandTileData",
+"body":"GetLandTileData(${Tile : Word});"
+},
+"GetStaticTileData" :{
+"prefix":"GetStaticTileData",
+"body":"GetStaticTileData(${Tile : Word});"
+},
+"ReadStaticsXY" :{
+"prefix":"ReadStaticsXY",
+"body":"ReadStaticsXY(${X : Word};${Y : Word};${WorldNum : Byte});"
+},
+"GetSurfaceZ" :{
+"prefix":"GetSurfaceZ",
+"body":"GetSurfaceZ(${X : Word};${Y : Word};${WorldNum : Byte});"
+},
+"GetMapCell" :{
+"prefix":"GetMapCell",
+"body":"GetMapCell(${X : Word};${Y : Word};${WorldNum : Byte});"
+},
+"IsWorldCellPassable" :{
+"prefix":"IsWorldCellPassable",
+"body":"IsWorldCellPassable(${CurrX : Word};${CurrY : Word};${Z : ShortInt};${DestX : Word};${DestY : Word};${var DestZ : ShortInt};${WorldNum : Byte});"
+},
+"GetLandTilesArray" :{
+"prefix":"GetLandTilesArray",
+"body":"GetLandTilesArray(${Xmin : Word};${Ymin : Word};${Xmax : Word};${Ymax : Word};${WorldNum : Byte};${TileType : Word};${var LandTilesArray : TFoundTilesArray});"
+},
+"GetLandTilesArrayEx" :{
+"prefix":"GetLandTilesArrayEx",
+"body":"GetLandTilesArrayEx(${Xmin : Word};${Ymin : Word};${Xmax : Word};${Ymax : Word};${WorldNum : Byte};${TileTypes : array of Word};${var LandTilesArray : TFoundTilesArray});"
+},
+"GetStaticTilesArray" :{
+"prefix":"GetStaticTilesArray",
+"body":"GetStaticTilesArray(${Xmin : Word};${Ymin : Word};${Xmax : Word};${Ymax : Word};${WorldNum : Byte};${TileType : Word};${var FoundTilesArray : TFoundTilesArray});"
+},
+"GetStaticTilesArrayEx" :{
+"prefix":"GetStaticTilesArrayEx",
+"body":"GetStaticTilesArrayEx(${Xmin : Word};${Ymin : Word};${Xmax : Word};${Ymax : Word};${WorldNum : Byte};${TileTypes : array of Word};${var FoundTilesArray : TFoundTilesArray});"
+},
+"FillNewWindow" :{
+"prefix":"FillNewWindow",
+"body":"FillNewWindow(${s : String});"
+},
+"FillInfoWindow" :{
+"prefix":"FillInfoWindow",
+"body":"FillInfoWindow(${s : String});"
+},
+"ClearInfoWindow;" :{
+"prefix":"ClearInfoWindow;",
+"body":"ClearInfoWindow;;"
+},
+"SetSilentMode" :{
+"prefix":"SetSilentMode",
+"body":"SetSilentMode(${Value : Boolean});"
+},
+"SetEasyUO" :{
+"prefix":"SetEasyUO",
+"body":"SetEasyUO(${num : Integer};${Regvalue : String});"
+},
+"GetEasyUO" :{
+"prefix":"GetEasyUO",
+"body":"GetEasyUO(${num : Integer});"
+},
+"EUO2Type" :{
+"prefix":"EUO2Type",
+"body":"EUO2Type(${EUO : String});"
+},
+"EUO2ID" :{
+"prefix":"EUO2ID",
+"body":"EUO2ID(${EUO : String});"
+},
+"RequestStats" :{
+"prefix":"RequestStats",
+"body":"RequestStats(${ObjID : Cardinal});"
+},
+"HelpRequest;" :{
+"prefix":"HelpRequest;",
+"body":"HelpRequest;;"
+},
+"QuestRequest;" :{
+"prefix":"QuestRequest;",
+"body":"QuestRequest;;"
+},
+"RenameMobile" :{
+"prefix":"RenameMobile",
+"body":"RenameMobile(${Mob_ID : Cardinal};${NewName : String});"
+},
+"OpenDoor;" :{
+"prefix":"OpenDoor;",
+"body":"OpenDoor;;"
+},
+"Bow;" :{
+"prefix":"Bow;",
+"body":"Bow;;"
+},
+"Salute;" :{
+"prefix":"Salute;",
+"body":"Salute;;"
+},
+"AddFigure" :{
+"prefix":"AddFigure",
+"body":"AddFigure(${const figure : TMapFigure});"
+},
+"RemoveFigure" :{
+"prefix":"RemoveFigure",
+"body":"RemoveFigure(${id : Cardinal});"
+},
+"UpdateFigure" :{
+"prefix":"UpdateFigure",
+"body":"UpdateFigure(${id : Cardinal};${const figure : TMapFigure});"
+},
+"ClearFigures;" :{
+"prefix":"ClearFigures;",
+"body":"ClearFigures;;"
+},
+"CheckLag" :{
+"prefix":"CheckLag",
+"body":"CheckLag(${timeoutMS : Integer});"
+},
+"SetRunUnmountTimer" :{
+"prefix":"SetRunUnmountTimer",
+"body":"SetRunUnmountTimer(${Value : Word});"
+},
+"SetWalkMountTimer" :{
+"prefix":"SetWalkMountTimer",
+"body":"SetWalkMountTimer(${Value : Word});"
+},
+"SetRunMountTimer" :{
+"prefix":"SetRunMountTimer",
+"body":"SetRunMountTimer(${Value : Word});"
+},
+"SetWalkUnmountTimer" :{
+"prefix":"SetWalkUnmountTimer",
+"body":"SetWalkUnmountTimer(${Value : Word});"
+},
+"GetRunUnMountTimer" :{
+"prefix":"GetRunUnMountTimer",
+"body":"GetRunUnMountTimer;"
+},
+"GetWalkMountTimer" :{
+"prefix":"GetWalkMountTimer",
+"body":"GetWalkMountTimer;"
+},
+"GetRunMountTimer" :{
+"prefix":"GetRunMountTimer",
+"body":"GetRunMountTimer;"
+},
+"GetWalkUnmountTimer" :{
+"prefix":"GetWalkUnmountTimer",
+"body":"GetWalkUnmountTimer;"
+},
+"GetNextStepZ" :{
+"prefix":"GetNextStepZ",
+"body":"GetNextStepZ(${CurrX : Word};${CurrY : Word};${DestX : Word};${DestY : Word};${WorldNum : Byte};${Z : ShortInt});"
+},
+"Dist" :{
+"prefix":"Dist",
+"body":"Dist(${X1 : Word};${Y1 : Word};${X2 : Word};${Y2 : Word});"
+},
+"CalcDir" :{
+"prefix":"CalcDir",
+"body":"CalcDir(${Xfrom : Integer};${Yfrom : Integer};${Xto : Integer};${Yto : Integer});"
+},
+"Raw_Move" :{
+"prefix":"Raw_Move",
+"body":"Raw_Move(${Direction : Byte};${Running : Boolean});"
+},
+"Step" :{
+"prefix":"Step",
+"body":"Step(${Direction : Byte};${Running : Boolean});"
+},
+"StepQ" :{
+"prefix":"StepQ",
+"body":"StepQ(${Direction : Byte};${Running : Boolean});"
+},
+"SetBadLocation" :{
+"prefix":"SetBadLocation",
+"body":"SetBadLocation(${X : Word};${Y : Word});"
+},
+"SetGoodLocation" :{
+"prefix":"SetGoodLocation",
+"body":"SetGoodLocation(${X : Word};${Y : Word});"
+},
+"ClearBadLocationList;" :{
+"prefix":"ClearBadLocationList;",
+"body":"ClearBadLocationList;;"
+},
+"SetBadObject" :{
+"prefix":"SetBadObject",
+"body":"SetBadObject(${ObjType : Word};${Color : Word};${Radius : Byte});"
+},
+"ClearBadObjectList;" :{
+"prefix":"ClearBadObjectList;",
+"body":"ClearBadObjectList;;"
+},
+"MoveXY" :{
+"prefix":"MoveXY",
+"body":"MoveXY(${Xdst : Word};${Ydst : Word};${Optimized : Boolean};${Accuracy : Integer};${Running : Boolean});"
+},
+"newMoveXY" :{
+"prefix":"newMoveXY",
+"body":"newMoveXY(${Xdst : Word};${Ydst : Word};${Optimized : Boolean};${Accuracy : Integer};${Running : Boolean});"
+},
+"MoveXYZ" :{
+"prefix":"MoveXYZ",
+"body":"MoveXYZ(${Xdst : Word};${Ydst : Word};${Zdst : ShortInt};${AccuracyXY : Integer};${AccuracyZ : Integer};${Running : Boolean});"
+},
+"GetPathArray" :{
+"prefix":"GetPathArray",
+"body":"GetPathArray(${DestX : Word};${DestY : Word};${Optimized : Boolean};${Accuracy : Integer};${var PathArray : TPathArray});"
+},
+"GetPathArray3D" :{
+"prefix":"GetPathArray3D",
+"body":"GetPathArray3D(${StartX : Word};${StartY : Word};${StartZ : ShortInt};${FinishX : Word};${FinishY : Word};${FinishZ : ShortInt};${WorldNum : Byte};${AccuracyXY : Integer};${AccuracyZ : Integer};${Run : Boolean};${var PathArray : TPathArray});"
+},
+"GetTooltip" :{
+"prefix":"GetTooltip",
+"body":"GetTooltip(${ObjID : Cardinal});"
+},
+"SetCatchBag" :{
+"prefix":"SetCatchBag",
+"body":"SetCatchBag(${ObjID : Cardinal});"
+},
+"UnsetCatchBag;" :{
+"prefix":"UnsetCatchBag;",
+"body":"UnsetCatchBag;;"
+},
+"EmptyContainer" :{
+"prefix":"EmptyContainer",
+"body":"EmptyContainer(${Container : Cardinal};${DestContainer : Cardinal};${DelayMS : Word});"
+},
+"SetStatState" :{
+"prefix":"SetStatState",
+"body":"SetStatState(${statNum : Byte};${statState : Byte});"
+},
+"GetSelfHandle" :{
+"prefix":"GetSelfHandle",
+"body":"GetSelfHandle;"
+},
+"GetStaticArt" :{
+"prefix":"GetStaticArt",
+"body":"GetStaticArt(${Id : Cardinal};${Hue : Word});"
+},
+"CheckLOS" :{
+"prefix":"CheckLOS",
+"body":"CheckLOS(${xf : Integer};${yf : Integer};${zf : Integer};${xt : Integer};${yt : Integer};${zt : Integer};${WorldNum : Byte});"
+},
+"GetContextMenu" :{
+"prefix":"GetContextMenu",
+"body":"GetContextMenu(${var list : TStringList});"
+},
+"ClearContextMenu;" :{
+"prefix":"ClearContextMenu;",
+"body":"ClearContextMenu;;"
+},
+"MobileCanBeRenamed" :{
+"prefix":"MobileCanBeRenamed",
+"body":"MobileCanBeRenamed(${Mob_ID : Cardinal});"
+},
+"ClientPrint" :{
+"prefix":"ClientPrint",
+"body":"ClientPrint(${Text : String});"
+},
+"ClientPrintEx" :{
+"prefix":"ClientPrintEx",
+"body":"ClientPrintEx(${SenderID : Cardinal};${Color : Word};${Font : Word};${Text : String});"
+},
+"GetQuestArrow" :{
+"prefix":"GetQuestArrow",
+"body":"GetQuestArrow(${var point : TPoint});"
+},
+"InviteToParty" :{
+"prefix":"InviteToParty",
+"body":"InviteToParty(${ID : Cardinal});"
+},
+"RemoveFromParty" :{
+"prefix":"RemoveFromParty",
+"body":"RemoveFromParty(${ID : Cardinal});"
+},
+"PartyPrivateMessageTo" :{
+"prefix":"PartyPrivateMessageTo",
+"body":"PartyPrivateMessageTo(${ID : Cardinal};${Msg : String});"
+},
+"PartySay" :{
+"prefix":"PartySay",
+"body":"PartySay(${Msg : String});"
+},
+"PartyCanLootMe" :{
+"prefix":"PartyCanLootMe",
+"body":"PartyCanLootMe(${Value : Boolean});"
+},
+"PartyAcceptInvite;" :{
+"prefix":"PartyAcceptInvite;",
+"body":"PartyAcceptInvite;;"
+},
+"PartyDeclineInvite;" :{
+"prefix":"PartyDeclineInvite;",
+"body":"PartyDeclineInvite;;"
+},
+"PartyLeave;" :{
+"prefix":"PartyLeave;",
+"body":"PartyLeave;;"
+},
+"PartyMembersList" :{
+"prefix":"PartyMembersList",
+"body":"PartyMembersList;"
+},
+"InParty" :{
+"prefix":"InParty",
+"body":"InParty;"
+},
+"GetToolTipRec" :{
+"prefix":"GetToolTipRec",
+"body":"GetToolTipRec(${ObjID : Cardinal});"
+},
+"GetBuffBarInfo" :{
+"prefix":"GetBuffBarInfo",
+"body":"GetBuffBarInfo;"
+},
+"GetClilocByID" :{
+"prefix":"GetClilocByID",
+"body":"GetClilocByID(${ClilocID : Cardinal});"
+},
+"CloseClientUIWindow" :{
+"prefix":"CloseClientUIWindow",
+"body":"CloseClientUIWindow(${UIWindowType : TUIWindowType};${ID : Cardinal});"
+},
+"IsActiveSpellAbility" :{
+"prefix":"IsActiveSpellAbility",
+"body":"IsActiveSpellAbility(${SpellName : String});"
+},
+"ClientRequestObjectTarget;" :{
+"prefix":"ClientRequestObjectTarget;",
+"body":"ClientRequestObjectTarget;;"
+},
+"ClientRequestTileTarget;" :{
+"prefix":"ClientRequestTileTarget;",
+"body":"ClientRequestTileTarget;;"
+},
+"ClientTargetResponsePresent" :{
+"prefix":"ClientTargetResponsePresent",
+"body":"ClientTargetResponsePresent;"
+},
+"WaitForClientTargetResponse" :{
+"prefix":"WaitForClientTargetResponse",
+"body":"WaitForClientTargetResponse(${MaxWaitTimeMS : Integer});"
+},
+"ClientTargetResponse" :{
+"prefix":"ClientTargetResponse",
+"body":"ClientTargetResponse;"
+},
+"UseVirtue" :{
+"prefix":"UseVirtue",
+"body":"UseVirtue(${VirtueName : String});"
+},
+"ReqVirtuesGump;" :{
+"prefix":"ReqVirtuesGump;",
+"body":"ReqVirtuesGump;;"
+},
+"GetMenuItems" :{
+"prefix":"GetMenuItems",
+"body":"GetMenuItems(${Caption : String};${var TL : TStringList});"
+},
+"GetLastMenuItems" :{
+"prefix":"GetLastMenuItems",
+"body":"GetLastMenuItems(${var TL : TStringList});"
+},
+"GameServerIPString" :{
+"prefix":"GameServerIPString",
+"body":"GameServerIPString;"
+},
+"CloseClientGump" :{
+"prefix":"CloseClientGump",
+"body":"CloseClientGump(${ID : Cardinal});"
+},
+"ClientHide" :{
+"prefix":"ClientHide",
+"body":"ClientHide(${ID : Cardinal});"
+},
+"InputBox" :{
+"prefix":"InputBox",
+"body":"InputBox(${ACaption : String};${APrompt : String};${ADefault : String});"
+},
+"AddToDebugJournal" :{
+"prefix":"AddToDebugJournal",
+"body":"AddToDebugJournal(${Msg : String});"
+},
+"ExtChangeProfile" :{
+"prefix":"ExtChangeProfile",
+"body":"ExtChangeProfile(${ProfileName : String};${ShardName : String = ''};${CharName : String = ''});"
+},
+"PrintScriptMethodsList" :{
+"prefix":"PrintScriptMethodsList",
+"body":"PrintScriptMethodsList(${FileName : String = '};${ SortedList : Boolean = False});"
+},
+"WinExec" :{
+"prefix":"WinExec",
+"body":"WinExec(${FileName : String};${ Parameters : String = '});"
+}

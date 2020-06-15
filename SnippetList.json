@@ -1,1752 +1,3250 @@
-"SetGlobal" :{
-"prefix":"SetGlobal",
-"body":"SetGlobal(${GlobalRegion : String};${VarName : String};${VarValue : String});"
-},
-"GetGlobal" :{
-"prefix":"GetGlobal",
-"body":"GetGlobal(${GlobalRegion : String};${VarName : String});"
-},
-"Connect;" :{
-"prefix":"Connect;",
-"body":"Connect;;"
-},
-"Disconnect;" :{
-"prefix":"Disconnect;",
-"body":"Disconnect;;"
-},
-"SetARStatus" :{
-"prefix":"SetARStatus",
-"body":"SetARStatus(${Value : Boolean});"
-},
-"GetARStatus" :{
-"prefix":"GetARStatus",
-"body":"GetARStatus;"
-},
-"SetPauseScriptOnDisconnectStatus" :{
-"prefix":"SetPauseScriptOnDisconnectStatus",
-"body":"SetPauseScriptOnDisconnectStatus(${Value : Boolean});"
-},
-"GetPauseScriptOnDisconnectStatus" :{
-"prefix":"GetPauseScriptOnDisconnectStatus",
-"body":"GetPauseScriptOnDisconnectStatus;"
-},
-"Connected" :{
-"prefix":"Connected",
-"body":"Connected;"
-},
-"CharName" :{
-"prefix":"CharName",
-"body":"CharName;"
-},
-"ProfileShardName" :{
-"prefix":"ProfileShardName",
-"body":"ProfileShardName;"
-},
-"ShardName" :{
-"prefix":"ShardName",
-"body":"ShardName;"
-},
-"Self" :{
-"prefix":"Self",
-"body":"Self;"
-},
-"SelfID" :{
-"prefix":"SelfID",
-"body":"SelfID;"
-},
-"Sex" :{
-"prefix":"Sex",
-"body":"Sex;"
-},
-"Gold" :{
-"prefix":"Gold",
-"body":"Gold;"
-},
-"ConnectedTime" :{
-"prefix":"ConnectedTime",
-"body":"ConnectedTime;"
-},
-"DisconnectedTime" :{
-"prefix":"DisconnectedTime",
-"body":"DisconnectedTime;"
-},
-"Backpack" :{
-"prefix":"Backpack",
-"body":"Backpack;"
-},
-"Ground" :{
-"prefix":"Ground",
-"body":"Ground;"
-},
-"Wait" :{
-"prefix":"Wait",
-"body":"Wait(${WaitTimeMS : Integer});"
-},
-"MsToDateTime" :{
-"prefix":"MsToDateTime",
-"body":"MsToDateTime(${TimeMS : Word});"
-},
-"Timer" :{
-"prefix":"Timer",
-"body":"Timer;"
-},
-"GetTickCount" :{
-"prefix":"GetTickCount",
-"body":"GetTickCount;"
-},
-"LineID" :{
-"prefix":"LineID",
-"body":"LineID;"
-},
-"FoundedParamID" :{
-"prefix":"FoundedParamID",
-"body":"FoundedParamID;"
-},
-"LineType" :{
-"prefix":"LineType",
-"body":"LineType;"
-},
-"LineName" :{
-"prefix":"LineName",
-"body":"LineName;"
-},
-"LineTime" :{
-"prefix":"LineTime",
-"body":"LineTime;"
-},
-"LineMsgType" :{
-"prefix":"LineMsgType",
-"body":"LineMsgType;"
-},
-"LineTextColor" :{
-"prefix":"LineTextColor",
-"body":"LineTextColor;"
-},
-"LineTextFont" :{
-"prefix":"LineTextFont",
-"body":"LineTextFont;"
-},
-"LineIndex" :{
-"prefix":"LineIndex",
-"body":"LineIndex;"
-},
-"LineCount" :{
-"prefix":"LineCount",
-"body":"LineCount;"
-},
-"AddToSystemJournal" :{
-"prefix":"AddToSystemJournal",
-"body":"AddToSystemJournal(${Text : String});"
-},
-"AddToJournal" :{
-"prefix":"AddToJournal",
-"body":"AddToJournal(${Text : String});"
-},
-"LastJournalMessage" :{
-"prefix":"LastJournalMessage",
-"body":"LastJournalMessage;"
-},
-"InJournal" :{
-"prefix":"InJournal",
-"body":"InJournal(${Str : String});"
-},
-"InJournalBetweenTimes" :{
-"prefix":"InJournalBetweenTimes",
-"body":"InJournalBetweenTimes(${Str : String};${TimeBegin : TDateTime};${TimeEnd : TDateTime});"
-},
-"Journal" :{
-"prefix":"Journal",
-"body":"Journal(${StringIndex : Integer});"
-},
-"SetJournalLine" :{
-"prefix":"SetJournalLine",
-"body":"SetJournalLine(${StringIndex : Integer};${Text : String});"
-},
-"ClearJournal;" :{
-"prefix":"ClearJournal;",
-"body":"ClearJournal;;"
-},
-"ClearSystemJournal;" :{
-"prefix":"ClearSystemJournal;",
-"body":"ClearSystemJournal;;"
-},
-"LowJournal" :{
-"prefix":"LowJournal",
-"body":"LowJournal;"
-},
-"HighJournal" :{
-"prefix":"HighJournal",
-"body":"HighJournal;"
-},
-"WaitJournalLine" :{
-"prefix":"WaitJournalLine",
-"body":"WaitJournalLine(${StartTime : TDateTime};${Str : String};${MaxWaitTimeMS : Integer});"
-},
-"WaitJournalLineSystem" :{
-"prefix":"WaitJournalLineSystem",
-"body":"WaitJournalLineSystem(${StartTime : TDateTime};${Str : String};${MaxWaitTimeMS : Integer});"
-},
-"IsObjectExists" :{
-"prefix":"IsObjectExists",
-"body":"IsObjectExists(${ObjID : Cardinal});"
-},
-"RhandLayer" :{
-"prefix":"RhandLayer",
-"body":"RhandLayer;"
-},
-"LhandLayer" :{
-"prefix":"LhandLayer",
-"body":"LhandLayer;"
-},
-"ShoesLayer" :{
-"prefix":"ShoesLayer",
-"body":"ShoesLayer;"
-},
-"PantsLayer" :{
-"prefix":"PantsLayer",
-"body":"PantsLayer;"
-},
-"ShirtLayer" :{
-"prefix":"ShirtLayer",
-"body":"ShirtLayer;"
-},
-"HatLayer" :{
-"prefix":"HatLayer",
-"body":"HatLayer;"
-},
-"GlovesLayer" :{
-"prefix":"GlovesLayer",
-"body":"GlovesLayer;"
-},
-"RingLayer" :{
-"prefix":"RingLayer",
-"body":"RingLayer;"
-},
-"TalismanLayer" :{
-"prefix":"TalismanLayer",
-"body":"TalismanLayer;"
-},
-"NeckLayer" :{
-"prefix":"NeckLayer",
-"body":"NeckLayer;"
-},
-"HairLayer" :{
-"prefix":"HairLayer",
-"body":"HairLayer;"
-},
-"WaistLayer" :{
-"prefix":"WaistLayer",
-"body":"WaistLayer;"
-},
-"TorsoLayer" :{
-"prefix":"TorsoLayer",
-"body":"TorsoLayer;"
-},
-"BraceLayer" :{
-"prefix":"BraceLayer",
-"body":"BraceLayer;"
-},
-"BeardLayer" :{
-"prefix":"BeardLayer",
-"body":"BeardLayer;"
-},
-"TorsoHLayer" :{
-"prefix":"TorsoHLayer",
-"body":"TorsoHLayer;"
-},
-"EarLayer" :{
-"prefix":"EarLayer",
-"body":"EarLayer;"
-},
-"ArmsLayer" :{
-"prefix":"ArmsLayer",
-"body":"ArmsLayer;"
-},
-"CloakLayer" :{
-"prefix":"CloakLayer",
-"body":"CloakLayer;"
-},
-"BpackLayer" :{
-"prefix":"BpackLayer",
-"body":"BpackLayer;"
-},
-"RobeLayer" :{
-"prefix":"RobeLayer",
-"body":"RobeLayer;"
-},
-"EggsLayer" :{
-"prefix":"EggsLayer",
-"body":"EggsLayer;"
-},
-"LegsLayer" :{
-"prefix":"LegsLayer",
-"body":"LegsLayer;"
-},
-"HorseLayer" :{
-"prefix":"HorseLayer",
-"body":"HorseLayer;"
-},
-"RstkLayer" :{
-"prefix":"RstkLayer",
-"body":"RstkLayer;"
-},
-"NRstkLayer" :{
-"prefix":"NRstkLayer",
-"body":"NRstkLayer;"
-},
-"SellLayer" :{
-"prefix":"SellLayer",
-"body":"SellLayer;"
-},
-"BankLayer" :{
-"prefix":"BankLayer",
-"body":"BankLayer;"
-},
-"BMSearch" :{
-"prefix":"BMSearch",
-"body":"BMSearch(${StartPos : Integer};${const S : String};${const P : String});"
-},
-"IsFigureText" :{
-"prefix":"IsFigureText",
-"body":"IsFigureText(${s : String});"
-},
-"AnsiByteArrayToString" :{
-"prefix":"AnsiByteArrayToString",
-"body":"AnsiByteArrayToString(${AnsiBytes : array of byte});"
-},
-"StrBreakApart" :{
-"prefix":"StrBreakApart",
-"body":"StrBreakApart(${const S : String};${Delimeter : String};${Parts : TStrings});"
-},
-"RandomRange" :{
-"prefix":"RandomRange",
-"body":"RandomRange(${const AFrom : Integer};${ATo : Integer});"
-},
-"ShowMessage" :{
-"prefix":"ShowMessage",
-"body":"ShowMessage(${const Msg : String});"
-},
-"Sign" :{
-"prefix":"Sign",
-"body":"Sign(${const AValue : Integer});"
-},
-"PlayWav" :{
-"prefix":"PlayWav",
-"body":"PlayWav(${FileName : String});"
-},
-"SetEventProc" :{
-"prefix":"SetEventProc",
-"body":"SetEventProc(${Eventname : TPacketEvent};${Procname : String});"
-},
-"HTTP_Get" :{
-"prefix":"HTTP_Get",
-"body":"HTTP_Get(${URL : String});"
-},
-"HTTP_Post" :{
-"prefix":"HTTP_Post",
-"body":"HTTP_Post(${URL : String};${PostData : TStringList});"
-},
-"HTTP_Body" :{
-"prefix":"HTTP_Body",
-"body":"HTTP_Body;"
-},
-"HTTP_Header" :{
-"prefix":"HTTP_Header",
-"body":"HTTP_Header;"
-},
-"ICQConnected" :{
-"prefix":"ICQConnected",
-"body":"ICQConnected;"
-},
-"ICQConnect" :{
-"prefix":"ICQConnect",
-"body":"ICQConnect(${UIN : String};${password : String});"
-},
-"ICQDisconnect;" :{
-"prefix":"ICQDisconnect;",
-"body":"ICQDisconnect;;"
-},
-"ICQSetXStatus" :{
-"prefix":"ICQSetXStatus",
-"body":"ICQSetXStatus(${Num : Byte});"
-},
-"ICQSetStatus" :{
-"prefix":"ICQSetStatus",
-"body":"ICQSetStatus(${Num : Byte});"
-},
-"ICQSendText" :{
-"prefix":"ICQSendText",
-"body":"ICQSendText(${DestinationUIN : String};${Text : String});"
-},
-"Alarm;" :{
-"prefix":"Alarm;",
-"body":"Alarm;;"
-},
-"MessageBoxTimeOut" :{
-"prefix":"MessageBoxTimeOut",
-"body":"MessageBoxTimeOut(${Msg : String};${DlgType : TMsgDlgType};${Buttons : TMsgDlgButtons};${TimeOutInterval : Cardinal});"
-},
-"IRCConnect" :{
-"prefix":"IRCConnect",
-"body":"IRCConnect(${Host : String};${Port : Word});"
-},
-"IRCDisconnect;" :{
-"prefix":"IRCDisconnect;",
-"body":"IRCDisconnect;;"
-},
-"IRCConnected" :{
-"prefix":"IRCConnected",
-"body":"IRCConnected;"
-},
-"IRCSay" :{
-"prefix":"IRCSay",
-"body":"IRCSay(${ATarget : String};${AMsg : String});"
-},
-"IRCJoin" :{
-"prefix":"IRCJoin",
-"body":"IRCJoin(${AChannel : String};${AKey : String = '' });"
-},
-"IRCRaw" :{
-"prefix":"IRCRaw",
-"body":"IRCRaw(${ALine: String});"
-},
-"IRCSetNickName" :{
-"prefix":"IRCSetNickName",
-"body":"IRCSetNickName(${NickName : String});"
-},
-"UseProxy" :{
-"prefix":"UseProxy",
-"body":"UseProxy;"
-},
-"ProxyIP" :{
-"prefix":"ProxyIP",
-"body":"ProxyIP;"
-},
-"ProxyPort" :{
-"prefix":"ProxyPort",
-"body":"ProxyPort;"
-},
-"ProfileName" :{
-"prefix":"ProfileName",
-"body":"ProfileName;"
-},
-"ChangeProfile" :{
-"prefix":"ChangeProfile",
-"body":"ChangeProfile(${Name : String});"
-},
-"StealthInfo" :{
-"prefix":"StealthInfo",
-"body":"StealthInfo;"
-},
-"StealthPath" :{
-"prefix":"StealthPath",
-"body":"StealthPath;"
-},
-"CurrentScriptPath" :{
-"prefix":"CurrentScriptPath",
-"body":"CurrentScriptPath;"
-},
-"StealthProfilePath" :{
-"prefix":"StealthProfilePath",
-"body":"StealthProfilePath;"
-},
-"ShardPath" :{
-"prefix":"ShardPath",
-"body":"ShardPath;"
-},
-"PauseCurrentScript;" :{
-"prefix":"PauseCurrentScript;",
-"body":"PauseCurrentScript;;"
-},
-"Halt;" :{
-"prefix":"Halt;",
-"body":"Halt;;"
-},
-"CurrentLine" :{
-"prefix":"CurrentLine",
-"body":"CurrentLine;"
-},
-"WinExec" :{
-"prefix":"WinExec",
-"body":"WinExec(${FileName : String};${Parameters : String = ''});"
-},
-"CharTitle" :{
-"prefix":"CharTitle",
-"body":"CharTitle;"
-},
-"Armor" :{
-"prefix":"Armor",
-"body":"Armor;"
-},
-"Weight" :{
-"prefix":"Weight",
-"body":"Weight;"
-},
-"MaxWeight" :{
-"prefix":"MaxWeight",
-"body":"MaxWeight;"
-},
-"Race" :{
-"prefix":"Race",
-"body":"Race;"
-},
-"WorldNum" :{
-"prefix":"WorldNum",
-"body":"WorldNum;"
-},
-"PetsCurrent" :{
-"prefix":"PetsCurrent",
-"body":"PetsCurrent;"
-},
-"PetsMax" :{
-"prefix":"PetsMax",
-"body":"PetsMax;"
-},
-"FireResist" :{
-"prefix":"FireResist",
-"body":"FireResist;"
-},
-"ColdResist" :{
-"prefix":"ColdResist",
-"body":"ColdResist;"
-},
-"PoisonResist" :{
-"prefix":"PoisonResist",
-"body":"PoisonResist;"
-},
-"EnergyResist" :{
-"prefix":"EnergyResist",
-"body":"EnergyResist;"
-},
-"LastContainer" :{
-"prefix":"LastContainer",
-"body":"LastContainer;"
-},
-"LastTarget" :{
-"prefix":"LastTarget",
-"body":"LastTarget;"
-},
-"LastAttack" :{
-"prefix":"LastAttack",
-"body":"LastAttack;"
-},
-"LastStatus" :{
-"prefix":"LastStatus",
-"body":"LastStatus;"
-},
-"LastObject" :{
-"prefix":"LastObject",
-"body":"LastObject;"
-},
-"Hidden" :{
-"prefix":"Hidden",
-"body":"Hidden;"
-},
-"Poisoned" :{
-"prefix":"Poisoned",
-"body":"Poisoned;"
-},
-"Paralyzed" :{
-"prefix":"Paralyzed",
-"body":"Paralyzed;"
-},
-"Dead" :{
-"prefix":"Dead",
-"body":"Dead;"
-},
-"WarMode" :{
-"prefix":"WarMode",
-"body":"WarMode;"
-},
-"WarTargetID" :{
-"prefix":"WarTargetID",
-"body":"WarTargetID;"
-},
-"SetWarMode" :{
-"prefix":"SetWarMode",
-"body":"SetWarMode(${Value : Boolean});"
-},
-"Attack" :{
-"prefix":"Attack",
-"body":"Attack(${ObjdID : Cardinal});"
-},
-"UseSelfPaperdollScroll;" :{
-"prefix":"UseSelfPaperdollScroll;",
-"body":"UseSelfPaperdollScroll;;"
-},
-"UseOtherPaperdollScroll" :{
-"prefix":"UseOtherPaperdollScroll",
-"body":"UseOtherPaperdollScroll(${ID : Cardinal});"
-},
-"GetName" :{
-"prefix":"GetName",
-"body":"GetName(${ObjID : Cardinal});"
-},
-"Str" :{
-"prefix":"Str",
-"body":"Str;"
-},
-"Int" :{
-"prefix":"Int",
-"body":"Int;"
-},
-"Dex" :{
-"prefix":"Dex",
-"body":"Dex;"
-},
-"Life" :{
-"prefix":"Life",
-"body":"Life;"
-},
-"HP" :{
-"prefix":"HP",
-"body":"HP;"
-},
-"Mana" :{
-"prefix":"Mana",
-"body":"Mana;"
-},
-"Stam" :{
-"prefix":"Stam",
-"body":"Stam;"
-},
-"MaxLife" :{
-"prefix":"MaxLife",
-"body":"MaxLife;"
-},
-"MaxHP" :{
-"prefix":"MaxHP",
-"body":"MaxHP;"
-},
-"MaxMana" :{
-"prefix":"MaxMana",
-"body":"MaxMana;"
-},
-"MaxStam" :{
-"prefix":"MaxStam",
-"body":"MaxStam;"
-},
-"Luck" :{
-"prefix":"Luck",
-"body":"Luck;"
-},
-"ExtendedInfo" :{
-"prefix":"ExtendedInfo",
-"body":"ExtendedInfo;"
-},
-"GetParent" :{
-"prefix":"GetParent",
-"body":"GetParent(${ObjID : Cardinal});"
-},
-"ObjAtLayer" :{
-"prefix":"ObjAtLayer",
-"body":"ObjAtLayer(${LayerType : Byte});"
-},
-"ObjAtLayerEx" :{
-"prefix":"ObjAtLayerEx",
-"body":"ObjAtLayerEx(${LayerType : Byte};${PlayerID : Cardinal});"
-},
-"GetLayer" :{
-"prefix":"GetLayer",
-"body":"GetLayer(${Obj : Cardinal});"
-},
-"TargetPresent" :{
-"prefix":"TargetPresent",
-"body":"TargetPresent;"
-},
-"TargetID" :{
-"prefix":"TargetID",
-"body":"TargetID;"
-},
-"WaitForTarget" :{
-"prefix":"WaitForTarget",
-"body":"WaitForTarget(${MaxWaitTimeMS : Integer});"
-},
-"CancelTarget;" :{
-"prefix":"CancelTarget;",
-"body":"CancelTarget;;"
-},
-"TargetToObject" :{
-"prefix":"TargetToObject",
-"body":"TargetToObject(${ObjectID : Cardinal});"
-},
-"TargetToXYZ" :{
-"prefix":"TargetToXYZ",
-"body":"TargetToXYZ(${X : Word};${Y : Word};${Z : ShortInt});"
-},
-"TargetToTile" :{
-"prefix":"TargetToTile",
-"body":"TargetToTile(${TileModel : Word};${X : Integer};${Y : Integer};${Z : Integer});"
-},
-"WaitTargetObject" :{
-"prefix":"WaitTargetObject",
-"body":"WaitTargetObject(${ObjID : Cardinal});"
-},
-"WaitTargetTile" :{
-"prefix":"WaitTargetTile",
-"body":"WaitTargetTile(${Tile : Word};${X : Integer};${Y : Integer};${Z : Integer});"
-},
-"WaitTargetXYZ" :{
-"prefix":"WaitTargetXYZ",
-"body":"WaitTargetXYZ(${X : Integer};${Y : Integer};${Z : Integer});"
-},
-"WaitTargetSelf;" :{
-"prefix":"WaitTargetSelf;",
-"body":"WaitTargetSelf;;"
-},
-"WaitTargetType" :{
-"prefix":"WaitTargetType",
-"body":"WaitTargetType(${ObjType : Word});"
-},
-"CancelWaitTarget;" :{
-"prefix":"CancelWaitTarget;",
-"body":"CancelWaitTarget;;"
-},
-"WaitTargetGround" :{
-"prefix":"WaitTargetGround",
-"body":"WaitTargetGround(${ObjType : Word});"
-},
-"WaitTargetLast;" :{
-"prefix":"WaitTargetLast;",
-"body":"WaitTargetLast;;"
-},
-"UOSay" :{
-"prefix":"UOSay",
-"body":"UOSay(${Text : String});"
-},
-"UOSayColor" :{
-"prefix":"UOSayColor",
-"body":"UOSayColor(${Text : String};${Color : Word});"
-},
-"ConsoleEntryReply" :{
-"prefix":"ConsoleEntryReply",
-"body":"ConsoleEntryReply(${Text : String});"
-},
-"ConsoleEntryUnicodeReply" :{
-"prefix":"ConsoleEntryUnicodeReply",
-"body":"ConsoleEntryUnicodeReply(${Text : String});"
-},
-"UseSkill" :{
-"prefix":"UseSkill",
-"body":"UseSkill(${SkillName : String});"
-},
-"SkillLockState" :{
-"prefix":"SkillLockState",
-"body":"SkillLockState(${SkillName : String};${skillState : Byte});"
-},
-"GetSkillValue" :{
-"prefix":"GetSkillValue",
-"body":"GetSkillValue(${SkillName : String});"
-},
-"GetSkillCurrentValue" :{
-"prefix":"GetSkillCurrentValue",
-"body":"GetSkillCurrentValue(${SkillName : String});"
-},
-"GetSkillCap" :{
-"prefix":"GetSkillCap",
-"body":"GetSkillCap(${SkillName : String});"
-},
-"UseObject" :{
-"prefix":"UseObject",
-"body":"UseObject(${ObjectID : Cardinal});"
-},
-"UseType" :{
-"prefix":"UseType",
-"body":"UseType(${ObjType : Word};${Color : Word});"
-},
-"UseFromGround" :{
-"prefix":"UseFromGround",
-"body":"UseFromGround(${ObjType : Word};${Color : Word});"
-},
-"ClickOnObject" :{
-"prefix":"ClickOnObject",
-"body":"ClickOnObject(${ObjectID : Cardinal});"
-},
-"Cast" :{
-"prefix":"Cast",
-"body":"Cast(${SpellName : String});"
-},
-"GetActiveAbility" :{
-"prefix":"GetActiveAbility",
-"body":"GetActiveAbility;"
-},
-"UsePrimaryAbility;" :{
-"prefix":"UsePrimaryAbility;",
-"body":"UsePrimaryAbility;;"
-},
-"ToggleFly;" :{
-"prefix":"ToggleFly;",
-"body":"ToggleFly;;"
-},
-"UseSecondaryAbility;" :{
-"prefix":"UseSecondaryAbility;",
-"body":"UseSecondaryAbility;;"
-},
-"ClearJournalIgnore;" :{
-"prefix":"ClearJournalIgnore;",
-"body":"ClearJournalIgnore;;"
-},
-"ClearChatUserIgnore;" :{
-"prefix":"ClearChatUserIgnore;",
-"body":"ClearChatUserIgnore;;"
-},
-"AddJournalIgnore" :{
-"prefix":"AddJournalIgnore",
-"body":"AddJournalIgnore(${Str : String});"
-},
-"AddChatUserIgnore" :{
-"prefix":"AddChatUserIgnore",
-"body":"AddChatUserIgnore(${User : String});"
-},
-"FindType" :{
-"prefix":"FindType",
-"body":"FindType(${ObjType : Word};${Container : Cardinal});"
-},
-"FindTypeEx" :{
-"prefix":"FindTypeEx",
-"body":"FindTypeEx(${ObjType : Word};${Color : Word};${Container : Cardinal};${InSub : Boolean});"
-},
-"FindTypesArrayEx" :{
-"prefix":"FindTypesArrayEx",
-"body":"FindTypesArrayEx(${ObjTypes : array of Word};${Colors : array of Word};${Containers : array of Cardinal};${InSub : Boolean});"
-},
-"FindNotoriety" :{
-"prefix":"FindNotoriety",
-"body":"FindNotoriety(${ObjType : Word};${Notoriety : Byte});"
-},
-"FindAtCoord" :{
-"prefix":"FindAtCoord",
-"body":"FindAtCoord(${X : Word};${Y : Word});"
-},
-"Ignore" :{
-"prefix":"Ignore",
-"body":"Ignore(${ObjID : Cardinal});"
-},
-"IgnoreOff" :{
-"prefix":"IgnoreOff",
-"body":"IgnoreOff(${ObjID : Cardinal});"
-},
-"IgnoreReset;" :{
-"prefix":"IgnoreReset;",
-"body":"IgnoreReset;;"
-},
-"GetIgnoreList" :{
-"prefix":"GetIgnoreList",
-"body":"GetIgnoreList(${var UserList : TStringList});"
-},
-"GetFindedList" :{
-"prefix":"GetFindedList",
-"body":"GetFindedList(${var UserList : TStringList});"
-},
-"FindItem" :{
-"prefix":"FindItem",
-"body":"FindItem;"
-},
-"FindCount" :{
-"prefix":"FindCount",
-"body":"FindCount;"
-},
-"FindQuantity" :{
-"prefix":"FindQuantity",
-"body":"FindQuantity;"
-},
-"FindFullQuantity" :{
-"prefix":"FindFullQuantity",
-"body":"FindFullQuantity;"
-},
-"PredictedX" :{
-"prefix":"PredictedX",
-"body":"PredictedX;"
-},
-"PredictedY" :{
-"prefix":"PredictedY",
-"body":"PredictedY;"
-},
-"PredictedZ" :{
-"prefix":"PredictedZ",
-"body":"PredictedZ;"
-},
-"PredictedDirection" :{
-"prefix":"PredictedDirection",
-"body":"PredictedDirection;"
-},
-"GetX" :{
-"prefix":"GetX",
-"body":"GetX(${ObjID : Cardinal});"
-},
-"GetY" :{
-"prefix":"GetY",
-"body":"GetY(${ObjID : Cardinal});"
-},
-"GetZ" :{
-"prefix":"GetZ",
-"body":"GetZ(${ObjID : Cardinal});"
-},
-"GetAltName" :{
-"prefix":"GetAltName",
-"body":"GetAltName(${ObjID : Cardinal});"
-},
-"GetTitle" :{
-"prefix":"GetTitle",
-"body":"GetTitle(${ObjID : Cardinal});"
-},
-"GetCliloc" :{
-"prefix":"GetCliloc",
-"body":"GetCliloc(${ObjID : Cardinal});"
-},
-"GetType" :{
-"prefix":"GetType",
-"body":"GetType(${ObjID : Cardinal});"
-},
-"GetQuantity" :{
-"prefix":"GetQuantity",
-"body":"GetQuantity(${ObjID : Cardinal});"
-},
-"GetPrice" :{
-"prefix":"GetPrice",
-"body":"GetPrice(${ObjID : Cardinal});"
-},
-"GetDirection" :{
-"prefix":"GetDirection",
-"body":"GetDirection(${ObjID : Cardinal});"
-},
-"GetDistance" :{
-"prefix":"GetDistance",
-"body":"GetDistance(${ObjID : Cardinal});"
-},
-"GetColor" :{
-"prefix":"GetColor",
-"body":"GetColor(${ObjID : Cardinal});"
-},
-"GetStr" :{
-"prefix":"GetStr",
-"body":"GetStr(${ObjID : Cardinal});"
-},
-"GetInt" :{
-"prefix":"GetInt",
-"body":"GetInt(${ObjID : Cardinal});"
-},
-"GetDex" :{
-"prefix":"GetDex",
-"body":"GetDex(${ObjID : Cardinal});"
-},
-"GetHP" :{
-"prefix":"GetHP",
-"body":"GetHP(${ObjID : Cardinal});"
-},
-"GetMaxHP" :{
-"prefix":"GetMaxHP",
-"body":"GetMaxHP(${ObjID : Cardinal});"
-},
-"GetMana" :{
-"prefix":"GetMana",
-"body":"GetMana(${ObjID : Cardinal});"
-},
-"GetMaxMana" :{
-"prefix":"GetMaxMana",
-"body":"GetMaxMana(${ObjID : Cardinal});"
-},
-"GetStam" :{
-"prefix":"GetStam",
-"body":"GetStam(${ObjID : Cardinal});"
-},
-"GetMaxStam" :{
-"prefix":"GetMaxStam",
-"body":"GetMaxStam(${ObjID : Cardinal});"
-},
-"GetNotoriety" :{
-"prefix":"GetNotoriety",
-"body":"GetNotoriety(${ObjID : Cardinal});"
-},
-"IsWarMode" :{
-"prefix":"IsWarMode",
-"body":"IsWarMode(${ObjID : Cardinal});"
-},
-"IsNPC" :{
-"prefix":"IsNPC",
-"body":"IsNPC(${ObjID : Cardinal});"
-},
-"IsDead" :{
-"prefix":"IsDead",
-"body":"IsDead(${ObjID : Cardinal});"
-},
-"IsRunning" :{
-"prefix":"IsRunning",
-"body":"IsRunning(${ObjID : Cardinal});"
-},
-"IsContainer" :{
-"prefix":"IsContainer",
-"body":"IsContainer(${ObjID : Cardinal});"
-},
-"IsHidden" :{
-"prefix":"IsHidden",
-"body":"IsHidden(${ObjID : Cardinal});"
-},
-"IsMovable" :{
-"prefix":"IsMovable",
-"body":"IsMovable(${ObjID : Cardinal});"
-},
-"IsYellowHits" :{
-"prefix":"IsYellowHits",
-"body":"IsYellowHits(${ObjID : Cardinal});"
-},
-"IsPoisoned" :{
-"prefix":"IsPoisoned",
-"body":"IsPoisoned(${ObjID : Cardinal});"
-},
-"IsParalyzed" :{
-"prefix":"IsParalyzed",
-"body":"IsParalyzed(${ObjID : Cardinal});"
-},
-"IsFemale" :{
-"prefix":"IsFemale",
-"body":"IsFemale(${ObjID : Cardinal});"
-},
-"DragItem" :{
-"prefix":"DragItem",
-"body":"DragItem(${ItemID : Cardinal};${Count : Integer});"
-},
-"DropItem" :{
-"prefix":"DropItem",
-"body":"DropItem(${MoveIntoID : Cardinal};${X : Integer};${Y : Integer};${Z : Integer});"
-},
-"MoveItem" :{
-"prefix":"MoveItem",
-"body":"MoveItem(${ItemID : Cardinal};${Count : Integer};${MoveIntoID : Cardinal};${X : Integer};${Y : Integer};${Z : Integer});"
-},
-"Grab" :{
-"prefix":"Grab",
-"body":"Grab(${ItemID : Cardinal};${Count : Integer});"
-},
-"Drop" :{
-"prefix":"Drop",
-"body":"Drop(${ItemID : Cardinal};${Count : Integer};${X : Integer};${Y : Integer};${Z : Integer});"
-},
-"DropHere" :{
-"prefix":"DropHere",
-"body":"DropHere(${ItemID : Cardinal});"
-},
-"MoveItems" :{
-"prefix":"MoveItems",
-"body":"MoveItems(${Container : Cardinal};${ItemsType : Word};${ItemsColor : Word};${MoveIntoID : Cardinal};${X : Integer};${Y : Integer};${Z : Integer};${DelayMS : Integer});"
-},
-"MoveItemsEx" :{
-"prefix":"MoveItemsEx",
-"body":"MoveItemsEx(${Container : Cardinal};${ItemsType : Word};${ItemsColor : Word};${MoveIntoID : Cardinal};${X : Integer};${Y : Integer};${Z : Integer};${DelayMS : Integer};${MaxItems : Integer});"
-},
-"RequestContextMenu" :{
-"prefix":"RequestContextMenu",
-"body":"RequestContextMenu(${ID : Cardinal});"
-},
-"SetContextMenuHook" :{
-"prefix":"SetContextMenuHook",
-"body":"SetContextMenuHook(${MenuID : Cardinal};${EntryNumber : Byte});"
-},
-"IsTrade" :{
-"prefix":"IsTrade",
-"body":"IsTrade;"
-},
-"GetTradeContainer" :{
-"prefix":"GetTradeContainer",
-"body":"GetTradeContainer(${TradeNum : Byte};${Num : Byte});"
-},
-"TradeCheck" :{
-"prefix":"TradeCheck",
-"body":"TradeCheck(${TradeNum : Byte};${Num : Byte});"
-},
-"GetTradeOpponent" :{
-"prefix":"GetTradeOpponent",
-"body":"GetTradeOpponent(${TradeNum : Byte});"
-},
-"GetTradeOpponentName" :{
-"prefix":"GetTradeOpponentName",
-"body":"GetTradeOpponentName(${TradeNum : Byte});"
-},
-"TradeCount" :{
-"prefix":"TradeCount",
-"body":"TradeCount;"
-},
-"ConfirmTrade" :{
-"prefix":"ConfirmTrade",
-"body":"ConfirmTrade(${TradeNum : Byte});"
-},
-"CancelTrade" :{
-"prefix":"CancelTrade",
-"body":"CancelTrade(${TradeNum : Byte});"
-},
-"WaitMenu" :{
-"prefix":"WaitMenu",
-"body":"WaitMenu(${UP : String};${UC : String});"
-},
-"CloseMenu;" :{
-"prefix":"CloseMenu;",
-"body":"CloseMenu;;"
-},
-"AutoMenu" :{
-"prefix":"AutoMenu",
-"body":"AutoMenu(${UP : String};${UC : String});"
-},
-"CancelMenu;" :{
-"prefix":"CancelMenu;",
-"body":"CancelMenu;;"
-},
-"MenuHookPresent" :{
-"prefix":"MenuHookPresent",
-"body":"MenuHookPresent;"
-},
-"MenuPresent" :{
-"prefix":"MenuPresent",
-"body":"MenuPresent;"
-},
-"WaitGump" :{
-"prefix":"WaitGump",
-"body":"WaitGump(${Value : String});"
-},
-"GumpAutoTextEntry" :{
-"prefix":"GumpAutoTextEntry",
-"body":"GumpAutoTextEntry(${TextEntryID : Integer};${Value : String});"
-},
-"GumpAutoRadiobutton" :{
-"prefix":"GumpAutoRadiobutton",
-"body":"GumpAutoRadiobutton(${RadiobuttonID : Integer};${Value : Integer});"
-},
-"GumpAutoCheckBox" :{
-"prefix":"GumpAutoCheckBox",
-"body":"GumpAutoCheckBox(${CheckBoxID : Integer};${Value : Integer});"
-},
-"NumGumpButton" :{
-"prefix":"NumGumpButton",
-"body":"NumGumpButton(${GumpIndex : Word};${Value : Integer});"
-},
-"NumGumpTextEntry" :{
-"prefix":"NumGumpTextEntry",
-"body":"NumGumpTextEntry(${GumpIndex : Word};${TextEntryID : Integer};${Value : String});"
-},
-"NumGumpRadiobutton" :{
-"prefix":"NumGumpRadiobutton",
-"body":"NumGumpRadiobutton(${GumpIndex : Word};${RadiobuttonID : Integer};${Value : Integer});"
-},
-"NumGumpCheckBox" :{
-"prefix":"NumGumpCheckBox",
-"body":"NumGumpCheckBox(${GumpIndex : Word};${CBID : Integer};${Value : Integer});"
-},
-"WaitTextEntry" :{
-"prefix":"WaitTextEntry",
-"body":"WaitTextEntry(${Value : String});"
-},
-"GetGumpsCount" :{
-"prefix":"GetGumpsCount",
-"body":"GetGumpsCount;"
-},
-"IsGump" :{
-"prefix":"IsGump",
-"body":"IsGump;"
-},
-"GetGumpSerial" :{
-"prefix":"GetGumpSerial",
-"body":"GetGumpSerial(${GumpIndex : Word});"
-},
-"GetGumpID" :{
-"prefix":"GetGumpID",
-"body":"GetGumpID(${GumpIndex : Word});"
-},
-"IsGumpCanBeClosed" :{
-"prefix":"IsGumpCanBeClosed",
-"body":"IsGumpCanBeClosed(${GumpIndex : Word});"
-},
-"GetGumpTextLines" :{
-"prefix":"GetGumpTextLines",
-"body":"GetGumpTextLines(${GumpIndex : Word};${var TL : TStringList});"
-},
-"GetGumpFullLines" :{
-"prefix":"GetGumpFullLines",
-"body":"GetGumpFullLines(${GumpIndex : Word};${var TL : TStringList});"
-},
-"GetGumpShortLines" :{
-"prefix":"GetGumpShortLines",
-"body":"GetGumpShortLines(${GumpIndex : Word};${var TL : TStringList});"
-},
-"GetGumpButtonsDescription" :{
-"prefix":"GetGumpButtonsDescription",
-"body":"GetGumpButtonsDescription(${GumpIndex : Word};${var TL : TStringList});"
-},
-"GetGumpInfo" :{
-"prefix":"GetGumpInfo",
-"body":"GetGumpInfo(${GumpIndex : Word};${var GumpInfo : TGumpInfo});"
-},
-"CloseSimpleGump" :{
-"prefix":"CloseSimpleGump",
-"body":"CloseSimpleGump(${GumpIndex : Word});"
-},
-"AddGumpIgnoreBySerial" :{
-"prefix":"AddGumpIgnoreBySerial",
-"body":"AddGumpIgnoreBySerial(${Serial : Cardinal});"
-},
-"AddGumpIgnoreByID" :{
-"prefix":"AddGumpIgnoreByID",
-"body":"AddGumpIgnoreByID(${ID : Cardinal});"
-},
-"ClearGumpsIgnore;" :{
-"prefix":"ClearGumpsIgnore;",
-"body":"ClearGumpsIgnore;;"
-},
-"WearItem" :{
-"prefix":"WearItem",
-"body":"WearItem(${Layer : Byte};${Obj : Cardinal});"
-},
-"Disarm" :{
-"prefix":"Disarm",
-"body":"Disarm;"
-},
-"Equip" :{
-"prefix":"Equip",
-"body":"Equip(${Layer : Byte};${Obj : Cardinal});"
-},
-"Equipt" :{
-"prefix":"Equipt",
-"body":"Equipt(${Layer : Byte};${ObjType : Word});"
-},
-"Unequip" :{
-"prefix":"Unequip",
-"body":"Unequip(${Layer : Byte});"
-},
-"Undress" :{
-"prefix":"Undress",
-"body":"Undress;"
-},
-"DressSavedSet" :{
-"prefix":"DressSavedSet",
-"body":"DressSavedSet;"
-},
-"EquipDressSet" :{
-"prefix":"EquipDressSet",
-"body":"EquipDressSet;"
-},
-"SetDress;" :{
-"prefix":"SetDress;",
-"body":"SetDress;;"
-},
-"Count" :{
-"prefix":"Count",
-"body":"Count(${ObjType : Word});"
-},
-"CountGround" :{
-"prefix":"CountGround",
-"body":"CountGround(${ObjType : Word});"
-},
-"CountEx" :{
-"prefix":"CountEx",
-"body":"CountEx(${ObjType : Word};${Color : Word};${Container : Cardinal});"
-},
-"BP" :{
-"prefix":"BP",
-"body":"BP;"
-},
-"BM" :{
-"prefix":"BM",
-"body":"BM;"
-},
-"GA" :{
-"prefix":"GA",
-"body":"GA;"
-},
-"GS" :{
-"prefix":"GS",
-"body":"GS;"
-},
-"MR" :{
-"prefix":"MR",
-"body":"MR;"
-},
-"NS" :{
-"prefix":"NS",
-"body":"NS;"
-},
-"SA" :{
-"prefix":"SA",
-"body":"SA;"
-},
-"SS" :{
-"prefix":"SS",
-"body":"SS;"
-},
-"BPCount" :{
-"prefix":"BPCount",
-"body":"BPCount;"
-},
-"BMCount" :{
-"prefix":"BMCount",
-"body":"BMCount;"
-},
-"GACount" :{
-"prefix":"GACount",
-"body":"GACount;"
-},
-"GSCount" :{
-"prefix":"GSCount",
-"body":"GSCount;"
-},
-"MRCount" :{
-"prefix":"MRCount",
-"body":"MRCount;"
-},
-"NSCount" :{
-"prefix":"NSCount",
-"body":"NSCount;"
-},
-"SACount" :{
-"prefix":"SACount",
-"body":"SACount;"
-},
-"SSCount" :{
-"prefix":"SSCount",
-"body":"SSCount;"
-},
-"AutoBuy" :{
-"prefix":"AutoBuy",
-"body":"AutoBuy(${ItemType : Word};${ItemColor : Word};${Quantity : Word});"
-},
-"AutoBuyEx" :{
-"prefix":"AutoBuyEx",
-"body":"AutoBuyEx(${ItemType : Word};${ItemColor : Word};${Quantity : Word};${Price : Cardinal};${Name : String});"
-},
-"GetShopList" :{
-"prefix":"GetShopList",
-"body":"GetShopList(${var List : TStringList});"
-},
-"ClearShopList;" :{
-"prefix":"ClearShopList;",
-"body":"ClearShopList;;"
-},
-"GetAutoBuyDelay" :{
-"prefix":"GetAutoBuyDelay",
-"body":"GetAutoBuyDelay;"
-},
-"SetAutoBuyDelay" :{
-"prefix":"SetAutoBuyDelay",
-"body":"SetAutoBuyDelay(${Value : Word});"
-},
-"AutoSell" :{
-"prefix":"AutoSell",
-"body":"AutoSell(${ItemType : Word};${ItemColor : Word};${Quantity : Word});"
-},
-"GetAutoSellDelay" :{
-"prefix":"GetAutoSellDelay",
-"body":"GetAutoSellDelay;"
-},
-"SetAutoSellDelay" :{
-"prefix":"SetAutoSellDelay",
-"body":"SetAutoSellDelay(${Value : Word});"
-},
-"GetTileFlags" :{
-"prefix":"GetTileFlags",
-"body":"GetTileFlags(${Group : Byte};${Tile : Word});"
-},
-"ConvertIntegerToFlags" :{
-"prefix":"ConvertIntegerToFlags",
-"body":"ConvertIntegerToFlags(${group : Byte};${I : Cardinal});"
-},
-"GetLayerCount" :{
-"prefix":"GetLayerCount",
-"body":"GetLayerCount(${x : Word};${y : Word};${WorldNum : Byte});"
-},
-"GetLandTileData" :{
-"prefix":"GetLandTileData",
-"body":"GetLandTileData(${Tile : Word});"
-},
-"GetStaticTileData" :{
-"prefix":"GetStaticTileData",
-"body":"GetStaticTileData(${Tile : Word});"
-},
-"ReadStaticsXY" :{
-"prefix":"ReadStaticsXY",
-"body":"ReadStaticsXY(${X : Word};${Y : Word};${WorldNum : Byte});"
-},
-"GetSurfaceZ" :{
-"prefix":"GetSurfaceZ",
-"body":"GetSurfaceZ(${X : Word};${Y : Word};${WorldNum : Byte});"
-},
-"GetMapCell" :{
-"prefix":"GetMapCell",
-"body":"GetMapCell(${X : Word};${Y : Word};${WorldNum : Byte});"
-},
-"IsWorldCellPassable" :{
-"prefix":"IsWorldCellPassable",
-"body":"IsWorldCellPassable(${CurrX : Word};${CurrY : Word};${Z : ShortInt};${DestX : Word};${DestY : Word};${var DestZ : ShortInt};${WorldNum : Byte});"
-},
-"GetLandTilesArray" :{
-"prefix":"GetLandTilesArray",
-"body":"GetLandTilesArray(${Xmin : Word};${Ymin : Word};${Xmax : Word};${Ymax : Word};${WorldNum : Byte};${TileType : Word};${var LandTilesArray : TFoundTilesArray});"
-},
-"GetLandTilesArrayEx" :{
-"prefix":"GetLandTilesArrayEx",
-"body":"GetLandTilesArrayEx(${Xmin : Word};${Ymin : Word};${Xmax : Word};${Ymax : Word};${WorldNum : Byte};${TileTypes : array of Word};${var LandTilesArray : TFoundTilesArray});"
-},
-"GetStaticTilesArray" :{
-"prefix":"GetStaticTilesArray",
-"body":"GetStaticTilesArray(${Xmin : Word};${Ymin : Word};${Xmax : Word};${Ymax : Word};${WorldNum : Byte};${TileType : Word};${var FoundTilesArray : TFoundTilesArray});"
-},
-"GetStaticTilesArrayEx" :{
-"prefix":"GetStaticTilesArrayEx",
-"body":"GetStaticTilesArrayEx(${Xmin : Word};${Ymin : Word};${Xmax : Word};${Ymax : Word};${WorldNum : Byte};${TileTypes : array of Word};${var FoundTilesArray : TFoundTilesArray});"
-},
-"FillNewWindow" :{
-"prefix":"FillNewWindow",
-"body":"FillNewWindow(${s : String});"
-},
-"FillInfoWindow" :{
-"prefix":"FillInfoWindow",
-"body":"FillInfoWindow(${s : String});"
-},
-"ClearInfoWindow;" :{
-"prefix":"ClearInfoWindow;",
-"body":"ClearInfoWindow;;"
-},
-"SetSilentMode" :{
-"prefix":"SetSilentMode",
-"body":"SetSilentMode(${Value : Boolean});"
-},
-"SetEasyUO" :{
-"prefix":"SetEasyUO",
-"body":"SetEasyUO(${num : Integer};${Regvalue : String});"
-},
-"GetEasyUO" :{
-"prefix":"GetEasyUO",
-"body":"GetEasyUO(${num : Integer});"
-},
-"EUO2Type" :{
-"prefix":"EUO2Type",
-"body":"EUO2Type(${EUO : String});"
-},
-"EUO2ID" :{
-"prefix":"EUO2ID",
-"body":"EUO2ID(${EUO : String});"
-},
-"RequestStats" :{
-"prefix":"RequestStats",
-"body":"RequestStats(${ObjID : Cardinal});"
-},
-"HelpRequest;" :{
-"prefix":"HelpRequest;",
-"body":"HelpRequest;;"
-},
-"QuestRequest;" :{
-"prefix":"QuestRequest;",
-"body":"QuestRequest;;"
-},
-"RenameMobile" :{
-"prefix":"RenameMobile",
-"body":"RenameMobile(${Mob_ID : Cardinal};${NewName : String});"
-},
-"OpenDoor;" :{
-"prefix":"OpenDoor;",
-"body":"OpenDoor;;"
-},
-"Bow;" :{
-"prefix":"Bow;",
-"body":"Bow;;"
-},
-"Salute;" :{
-"prefix":"Salute;",
-"body":"Salute;;"
-},
-"AddFigure" :{
-"prefix":"AddFigure",
-"body":"AddFigure(${const figure : TMapFigure});"
-},
-"RemoveFigure" :{
-"prefix":"RemoveFigure",
-"body":"RemoveFigure(${id : Cardinal});"
-},
-"UpdateFigure" :{
-"prefix":"UpdateFigure",
-"body":"UpdateFigure(${id : Cardinal};${const figure : TMapFigure});"
-},
-"ClearFigures;" :{
-"prefix":"ClearFigures;",
-"body":"ClearFigures;;"
-},
-"CheckLag" :{
-"prefix":"CheckLag",
-"body":"CheckLag(${timeoutMS : Integer});"
-},
-"SetRunUnmountTimer" :{
-"prefix":"SetRunUnmountTimer",
-"body":"SetRunUnmountTimer(${Value : Word});"
-},
-"SetWalkMountTimer" :{
-"prefix":"SetWalkMountTimer",
-"body":"SetWalkMountTimer(${Value : Word});"
-},
-"SetRunMountTimer" :{
-"prefix":"SetRunMountTimer",
-"body":"SetRunMountTimer(${Value : Word});"
-},
-"SetWalkUnmountTimer" :{
-"prefix":"SetWalkUnmountTimer",
-"body":"SetWalkUnmountTimer(${Value : Word});"
-},
-"GetRunUnMountTimer" :{
-"prefix":"GetRunUnMountTimer",
-"body":"GetRunUnMountTimer;"
-},
-"GetWalkMountTimer" :{
-"prefix":"GetWalkMountTimer",
-"body":"GetWalkMountTimer;"
-},
-"GetRunMountTimer" :{
-"prefix":"GetRunMountTimer",
-"body":"GetRunMountTimer;"
-},
-"GetWalkUnmountTimer" :{
-"prefix":"GetWalkUnmountTimer",
-"body":"GetWalkUnmountTimer;"
-},
-"GetNextStepZ" :{
-"prefix":"GetNextStepZ",
-"body":"GetNextStepZ(${CurrX : Word};${CurrY : Word};${DestX : Word};${DestY : Word};${WorldNum : Byte};${Z : ShortInt});"
-},
-"Dist" :{
-"prefix":"Dist",
-"body":"Dist(${X1 : Word};${Y1 : Word};${X2 : Word};${Y2 : Word});"
-},
-"CalcDir" :{
-"prefix":"CalcDir",
-"body":"CalcDir(${Xfrom : Integer};${Yfrom : Integer};${Xto : Integer};${Yto : Integer});"
-},
-"Raw_Move" :{
-"prefix":"Raw_Move",
-"body":"Raw_Move(${Direction : Byte};${Running : Boolean});"
-},
-"Step" :{
-"prefix":"Step",
-"body":"Step(${Direction : Byte};${Running : Boolean});"
-},
-"StepQ" :{
-"prefix":"StepQ",
-"body":"StepQ(${Direction : Byte};${Running : Boolean});"
-},
-"SetBadLocation" :{
-"prefix":"SetBadLocation",
-"body":"SetBadLocation(${X : Word};${Y : Word});"
-},
-"SetGoodLocation" :{
-"prefix":"SetGoodLocation",
-"body":"SetGoodLocation(${X : Word};${Y : Word});"
-},
-"ClearBadLocationList;" :{
-"prefix":"ClearBadLocationList;",
-"body":"ClearBadLocationList;;"
-},
-"SetBadObject" :{
-"prefix":"SetBadObject",
-"body":"SetBadObject(${ObjType : Word};${Color : Word};${Radius : Byte});"
-},
-"ClearBadObjectList;" :{
-"prefix":"ClearBadObjectList;",
-"body":"ClearBadObjectList;;"
-},
-"MoveXY" :{
-"prefix":"MoveXY",
-"body":"MoveXY(${Xdst : Word};${Ydst : Word};${Optimized : Boolean};${Accuracy : Integer};${Running : Boolean});"
-},
-"newMoveXY" :{
-"prefix":"newMoveXY",
-"body":"newMoveXY(${Xdst : Word};${Ydst : Word};${Optimized : Boolean};${Accuracy : Integer};${Running : Boolean});"
-},
-"MoveXYZ" :{
-"prefix":"MoveXYZ",
-"body":"MoveXYZ(${Xdst : Word};${Ydst : Word};${Zdst : ShortInt};${AccuracyXY : Integer};${AccuracyZ : Integer};${Running : Boolean});"
-},
-"GetPathArray" :{
-"prefix":"GetPathArray",
-"body":"GetPathArray(${DestX : Word};${DestY : Word};${Optimized : Boolean};${Accuracy : Integer};${var PathArray : TPathArray});"
-},
-"GetPathArray3D" :{
-"prefix":"GetPathArray3D",
-"body":"GetPathArray3D(${StartX : Word};${StartY : Word};${StartZ : ShortInt};${FinishX : Word};${FinishY : Word};${FinishZ : ShortInt};${WorldNum : Byte};${AccuracyXY : Integer};${AccuracyZ : Integer};${Run : Boolean};${var PathArray : TPathArray});"
-},
-"GetTooltip" :{
-"prefix":"GetTooltip",
-"body":"GetTooltip(${ObjID : Cardinal});"
-},
-"SetCatchBag" :{
-"prefix":"SetCatchBag",
-"body":"SetCatchBag(${ObjID : Cardinal});"
-},
-"UnsetCatchBag;" :{
-"prefix":"UnsetCatchBag;",
-"body":"UnsetCatchBag;;"
-},
-"EmptyContainer" :{
-"prefix":"EmptyContainer",
-"body":"EmptyContainer(${Container : Cardinal};${DestContainer : Cardinal};${DelayMS : Word});"
-},
-"SetStatState" :{
-"prefix":"SetStatState",
-"body":"SetStatState(${statNum : Byte};${statState : Byte});"
-},
-"GetSelfHandle" :{
-"prefix":"GetSelfHandle",
-"body":"GetSelfHandle;"
-},
-"GetStaticArt" :{
-"prefix":"GetStaticArt",
-"body":"GetStaticArt(${Id : Cardinal};${Hue : Word});"
-},
-"CheckLOS" :{
-"prefix":"CheckLOS",
-"body":"CheckLOS(${xf : Integer};${yf : Integer};${zf : Integer};${xt : Integer};${yt : Integer};${zt : Integer};${WorldNum : Byte});"
-},
-"GetContextMenu" :{
-"prefix":"GetContextMenu",
-"body":"GetContextMenu(${var list : TStringList});"
-},
-"ClearContextMenu;" :{
-"prefix":"ClearContextMenu;",
-"body":"ClearContextMenu;;"
-},
-"MobileCanBeRenamed" :{
-"prefix":"MobileCanBeRenamed",
-"body":"MobileCanBeRenamed(${Mob_ID : Cardinal});"
-},
-"ClientPrint" :{
-"prefix":"ClientPrint",
-"body":"ClientPrint(${Text : String});"
-},
-"ClientPrintEx" :{
-"prefix":"ClientPrintEx",
-"body":"ClientPrintEx(${SenderID : Cardinal};${Color : Word};${Font : Word};${Text : String});"
-},
-"GetQuestArrow" :{
-"prefix":"GetQuestArrow",
-"body":"GetQuestArrow(${var point : TPoint});"
-},
-"InviteToParty" :{
-"prefix":"InviteToParty",
-"body":"InviteToParty(${ID : Cardinal});"
-},
-"RemoveFromParty" :{
-"prefix":"RemoveFromParty",
-"body":"RemoveFromParty(${ID : Cardinal});"
-},
-"PartyPrivateMessageTo" :{
-"prefix":"PartyPrivateMessageTo",
-"body":"PartyPrivateMessageTo(${ID : Cardinal};${Msg : String});"
-},
-"PartySay" :{
-"prefix":"PartySay",
-"body":"PartySay(${Msg : String});"
-},
-"PartyCanLootMe" :{
-"prefix":"PartyCanLootMe",
-"body":"PartyCanLootMe(${Value : Boolean});"
-},
-"PartyAcceptInvite;" :{
-"prefix":"PartyAcceptInvite;",
-"body":"PartyAcceptInvite;;"
-},
-"PartyDeclineInvite;" :{
-"prefix":"PartyDeclineInvite;",
-"body":"PartyDeclineInvite;;"
-},
-"PartyLeave;" :{
-"prefix":"PartyLeave;",
-"body":"PartyLeave;;"
-},
-"PartyMembersList" :{
-"prefix":"PartyMembersList",
-"body":"PartyMembersList;"
-},
-"InParty" :{
-"prefix":"InParty",
-"body":"InParty;"
-},
-"GetToolTipRec" :{
-"prefix":"GetToolTipRec",
-"body":"GetToolTipRec(${ObjID : Cardinal});"
-},
-"GetBuffBarInfo" :{
-"prefix":"GetBuffBarInfo",
-"body":"GetBuffBarInfo;"
-},
-"GetClilocByID" :{
-"prefix":"GetClilocByID",
-"body":"GetClilocByID(${ClilocID : Cardinal});"
-},
-"CloseClientUIWindow" :{
-"prefix":"CloseClientUIWindow",
-"body":"CloseClientUIWindow(${UIWindowType : TUIWindowType};${ID : Cardinal});"
-},
-"IsActiveSpellAbility" :{
-"prefix":"IsActiveSpellAbility",
-"body":"IsActiveSpellAbility(${SpellName : String});"
-},
-"ClientRequestObjectTarget;" :{
-"prefix":"ClientRequestObjectTarget;",
-"body":"ClientRequestObjectTarget;;"
-},
-"ClientRequestTileTarget;" :{
-"prefix":"ClientRequestTileTarget;",
-"body":"ClientRequestTileTarget;;"
-},
-"ClientTargetResponsePresent" :{
-"prefix":"ClientTargetResponsePresent",
-"body":"ClientTargetResponsePresent;"
-},
-"WaitForClientTargetResponse" :{
-"prefix":"WaitForClientTargetResponse",
-"body":"WaitForClientTargetResponse(${MaxWaitTimeMS : Integer});"
-},
-"ClientTargetResponse" :{
-"prefix":"ClientTargetResponse",
-"body":"ClientTargetResponse;"
-},
-"UseVirtue" :{
-"prefix":"UseVirtue",
-"body":"UseVirtue(${VirtueName : String});"
-},
-"ReqVirtuesGump;" :{
-"prefix":"ReqVirtuesGump;",
-"body":"ReqVirtuesGump;;"
-},
-"GetMenuItems" :{
-"prefix":"GetMenuItems",
-"body":"GetMenuItems(${Caption : String};${var TL : TStringList});"
-},
-"GetLastMenuItems" :{
-"prefix":"GetLastMenuItems",
-"body":"GetLastMenuItems(${var TL : TStringList});"
-},
-"GameServerIPString" :{
-"prefix":"GameServerIPString",
-"body":"GameServerIPString;"
-},
-"CloseClientGump" :{
-"prefix":"CloseClientGump",
-"body":"CloseClientGump(${ID : Cardinal});"
-},
-"ClientHide" :{
-"prefix":"ClientHide",
-"body":"ClientHide(${ID : Cardinal});"
-},
-"InputBox" :{
-"prefix":"InputBox",
-"body":"InputBox(${ACaption : String};${APrompt : String};${ADefault : String});"
-},
-"AddToDebugJournal" :{
-"prefix":"AddToDebugJournal",
-"body":"AddToDebugJournal(${Msg : String});"
-},
-"ExtChangeProfile" :{
-"prefix":"ExtChangeProfile",
-"body":"ExtChangeProfile(${ProfileName : String};${ShardName : String = ''};${CharName : String = ''});"
-},
-"PrintScriptMethodsList" :{
-"prefix":"PrintScriptMethodsList",
-"body":"PrintScriptMethodsList(${FileName : String = '};${ SortedList : Boolean = False});"
-},
-"WinExec" :{
-"prefix":"WinExec",
-"body":"WinExec(${FileName : String};${ Parameters : String = '});"
+{
+  "procedure SetGlobal(GlobalRegion : String;VarName : String;VarValue : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetGlobal",
+    "body": [
+      "SetGlobal(${1:GlobalRegion : String}; ${2:VarName : String}; ${3:VarValue : String});"
+    ]
+  },
+  "function GetGlobal(GlobalRegion : String;VarName : String) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetGlobal",
+    "body": [
+      "GetGlobal(${1:GlobalRegion : String}; ${2:VarName : String});"
+    ]
+  },
+  "procedure Connect;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Connect",
+    "body": [
+      "Connect"
+    ]
+  },
+  "procedure Disconnect;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Disconnect",
+    "body": [
+      "Disconnect"
+    ]
+  },
+  "procedure SetARStatus(Value : Boolean);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetARStatus",
+    "body": [
+      "SetARStatus(${1:Value : Boolean});"
+    ]
+  },
+  "function GetARStatus : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetARStatus",
+    "body": [
+      "GetARStatus"
+    ]
+  },
+  "procedure SetPauseScriptOnDisconnectStatus(Value : Boolean);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetPauseScriptOnDisconnectStatus",
+    "body": [
+      "SetPauseScriptOnDisconnectStatus(${1:Value : Boolean});"
+    ]
+  },
+  "function GetPauseScriptOnDisconnectStatus : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetPauseScriptOnDisconnectStatus",
+    "body": [
+      "GetPauseScriptOnDisconnectStatus"
+    ]
+  },
+  "function Connected : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Connected",
+    "body": [
+      "Connected"
+    ]
+  },
+  "function CharName : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CharName",
+    "body": [
+      "CharName"
+    ]
+  },
+  "function ProfileShardName : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ProfileShardName",
+    "body": [
+      "ProfileShardName"
+    ]
+  },
+  "function ShardName : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ShardName",
+    "body": [
+      "ShardName"
+    ]
+  },
+  "function Self : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Self",
+    "body": [
+      "Self"
+    ]
+  },
+  "function SelfID : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SelfID",
+    "body": [
+      "SelfID"
+    ]
+  },
+  "function PlayerID : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PlayerID",
+    "body": [
+      "PlayerID"
+    ]
+  },
+  "function Gold : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Gold",
+    "body": [
+      "Gold"
+    ]
+  },
+  "function ConnectedTime : TDateTime;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ConnectedTime",
+    "body": [
+      "ConnectedTime"
+    ]
+  },
+  "function DisconnectedTime : TDateTime;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "DisconnectedTime",
+    "body": [
+      "DisconnectedTime"
+    ]
+  },
+  "procedure Wait(WaitTimeMS : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Wait",
+    "body": [
+      "Wait(${1:WaitTimeMS : Cardinal});"
+    ]
+  },
+  "function MsToDateTime(TimeMS : Cardinal) : TDateTime;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MsToDateTime",
+    "body": [
+      "MsToDateTime(${1:TimeMS : Cardinal});"
+    ]
+  },
+  "function Timer : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Timer",
+    "body": [
+      "Timer"
+    ]
+  },
+  "function GetTickCount : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetTickCount",
+    "body": [
+      "GetTickCount"
+    ]
+  },
+  "function LineID : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LineID",
+    "body": [
+      "LineID"
+    ]
+  },
+  "function FoundedParamID : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FoundedParamID",
+    "body": [
+      "FoundedParamID"
+    ]
+  },
+  "function LineType : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LineType",
+    "body": [
+      "LineType"
+    ]
+  },
+  "function LineName : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LineName",
+    "body": [
+      "LineName"
+    ]
+  },
+  "function LineTime : TDateTime;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LineTime",
+    "body": [
+      "LineTime"
+    ]
+  },
+  "function LineMsgType : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LineMsgType",
+    "body": [
+      "LineMsgType"
+    ]
+  },
+  "function LineTextColor : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LineTextColor",
+    "body": [
+      "LineTextColor"
+    ]
+  },
+  "function LineTextFont : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LineTextFont",
+    "body": [
+      "LineTextFont"
+    ]
+  },
+  "function LineIndex : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LineIndex",
+    "body": [
+      "LineIndex"
+    ]
+  },
+  "function LineCount : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LineCount",
+    "body": [
+      "LineCount"
+    ]
+  },
+  "procedure AddToSystemJournal(Text : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AddToSystemJournal",
+    "body": [
+      "AddToSystemJournal(${1:Text : String});"
+    ]
+  },
+  "procedure AddToJournal(Text : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AddToJournal",
+    "body": [
+      "AddToJournal(${1:Text : String});"
+    ]
+  },
+  "function LastJournalMessage : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LastJournalMessage",
+    "body": [
+      "LastJournalMessage"
+    ]
+  },
+  "function InJournal(Str : String) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "InJournal",
+    "body": [
+      "InJournal(${1:Str : String});"
+    ]
+  },
+  "function InJournalBetweenTimes(Str : String;TimeBegin : TDateTime;TimeEnd : TDateTime) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "InJournalBetweenTimes",
+    "body": [
+      "InJournalBetweenTimes(${1:Str : String}; ${2:TimeBegin : TDateTime}; ${3:TimeEnd : TDateTime});"
+    ]
+  },
+  "function Journal(StringIndex : Integer) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Journal",
+    "body": [
+      "Journal(${1:StringIndex : Integer});"
+    ]
+  },
+  "procedure SetJournalLine(StringIndex : Integer;Text : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetJournalLine",
+    "body": [
+      "SetJournalLine(${1:StringIndex : Integer}; ${2:Text : String});"
+    ]
+  },
+  "procedure ClearJournal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearJournal",
+    "body": [
+      "ClearJournal"
+    ]
+  },
+  "procedure ClearSystemJournal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearSystemJournal",
+    "body": [
+      "ClearSystemJournal"
+    ]
+  },
+  "function LowJournal : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LowJournal",
+    "body": [
+      "LowJournal"
+    ]
+  },
+  "function HighJournal : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HighJournal",
+    "body": [
+      "HighJournal"
+    ]
+  },
+  "function WaitJournalLine(StartTime : TDateTime;Str : String;MaxWaitTimeMS : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitJournalLine",
+    "body": [
+      "WaitJournalLine(${1:StartTime : TDateTime}; ${2:Str : String}; ${3:MaxWaitTimeMS : Integer});"
+    ]
+  },
+  "function WaitJournalLineSystem(StartTime : TDateTime;Str : String;MaxWaitTimeMS : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitJournalLineSystem",
+    "body": [
+      "WaitJournalLineSystem(${1:StartTime : TDateTime}; ${2:Str : String}; ${3:MaxWaitTimeMS : Integer});"
+    ]
+  },
+  "function IsObjectExists(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsObjectExists",
+    "body": [
+      "IsObjectExists(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function BMSearch(StartPos : Integer;const S : String;const P : String) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BMSearch",
+    "body": [
+      "BMSearch(${1:StartPos : Integer}; ${2:const S : String}; ${3:const P : String});"
+    ]
+  },
+  "function IsFigureText(s : String) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsFigureText",
+    "body": [
+      "IsFigureText(${1:s : String});"
+    ]
+  },
+  "function AnsiByteArrayToString(AnsiBytes : array of byte) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AnsiByteArrayToString",
+    "body": [
+      "AnsiByteArrayToString(${1:AnsiBytes : array of byte});"
+    ]
+  },
+  "function ConvertCharArray2String(AnsiBytes : array of byte) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ConvertCharArray2String",
+    "body": [
+      "ConvertCharArray2String(${1:AnsiBytes : array of byte});"
+    ]
+  },
+  "procedure StrBreakApart(const S : String;Delimeter : String;Parts : TStrings);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "StrBreakApart",
+    "body": [
+      "StrBreakApart(${1:const S : String}; ${2:Delimeter : String}; ${3:Parts : TStrings});"
+    ]
+  },
+  "function RandomRange(const AFrom : Integer;ATo : Integer) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RandomRange",
+    "body": [
+      "RandomRange(${1:const AFrom : Integer}; ${2:ATo : Integer});"
+    ]
+  },
+  "procedure ShowMessage(const Msg : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ShowMessage",
+    "body": [
+      "ShowMessage(${1:const Msg : String});"
+    ]
+  },
+  "function Sign(const AValue : Integer) : ShortInt;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Sign",
+    "body": [
+      "Sign(${1:const AValue : Integer});"
+    ]
+  },
+  "function PlayWav(FileName : String) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PlayWav",
+    "body": [
+      "PlayWav(${1:FileName : String});"
+    ]
+  },
+  "procedure SetEventProc(Eventname : TPacketEvent;Procname : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetEventProc",
+    "body": [
+      "SetEventProc(${1:Eventname : TPacketEvent}; ${2:Procname : String});"
+    ]
+  },
+  "procedure HTTP_Get(URL : String;LStream: TMemoryStream = nil);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HTTP_Get",
+    "body": [
+      "HTTP_Get(${1:URL : String}; ${2:LStream: TMemoryStream = nil});"
+    ]
+  },
+  "function HTTP_Post(URL : String;PostData : TStringList) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HTTP_Post",
+    "body": [
+      "HTTP_Post(${1:URL : String}; ${2:PostData : TStringList});"
+    ]
+  },
+  "function HTTP_Body : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HTTP_Body",
+    "body": [
+      "HTTP_Body"
+    ]
+  },
+  "function HTTP_Header : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HTTP_Header",
+    "body": [
+      "HTTP_Header"
+    ]
+  },
+  "function ICQConnected : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ICQConnected",
+    "body": [
+      "ICQConnected"
+    ]
+  },
+  "procedure ICQConnect(UIN : String;password : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ICQConnect",
+    "body": [
+      "ICQConnect(${1:UIN : String}; ${2:password : String});"
+    ]
+  },
+  "procedure ICQDisconnect;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ICQDisconnect",
+    "body": [
+      "ICQDisconnect"
+    ]
+  },
+  "procedure ICQSetXStatus(Num : Byte);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ICQSetXStatus",
+    "body": [
+      "ICQSetXStatus(${1:Num : Byte});"
+    ]
+  },
+  "procedure ICQSetStatus(Num : Byte);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ICQSetStatus",
+    "body": [
+      "ICQSetStatus(${1:Num : Byte});"
+    ]
+  },
+  "procedure ICQSendText(DestinationUIN : String;Text : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ICQSendText",
+    "body": [
+      "ICQSendText(${1:DestinationUIN : String}; ${2:Text : String});"
+    ]
+  },
+  "procedure Alarm;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Alarm",
+    "body": [
+      "Alarm"
+    ]
+  },
+  "function MessageBoxTimeOut(Msg : String;DlgType : TMsgDlgType;Buttons : TMsgDlgButtons;TimeOutInterval : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MessageBoxTimeOut",
+    "body": [
+      "MessageBoxTimeOut(${1:Msg : String}; ${2:DlgType : TMsgDlgType}; ${3:Buttons : TMsgDlgButtons}; ${4:TimeOutInterval : Cardinal});"
+    ]
+  },
+  "procedure IRCConnect(Host : String;Port : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IRCConnect",
+    "body": [
+      "IRCConnect(${1:Host : String}; ${2:Port : Word});"
+    ]
+  },
+  "procedure IRCDisconnect;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IRCDisconnect",
+    "body": [
+      "IRCDisconnect"
+    ]
+  },
+  "function IRCConnected : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IRCConnected",
+    "body": [
+      "IRCConnected"
+    ]
+  },
+  "procedure IRCSay(ATarget : String;AMsg : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IRCSay",
+    "body": [
+      "IRCSay(${1:ATarget : String}; ${2:AMsg : String});"
+    ]
+  },
+  "procedure IRCJoin(AChannel : String;AKey : String = '' );": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IRCJoin",
+    "body": [
+      "IRCJoin(${1:AChannel : String}; ${2:AKey : String = '' });"
+    ]
+  },
+  "procedure IRCRaw(ALine: String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IRCRaw",
+    "body": [
+      "IRCRaw(${1:ALine: String});"
+    ]
+  },
+  "procedure IRCSetNickName(NickName : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IRCSetNickName",
+    "body": [
+      "IRCSetNickName(${1:NickName : String});"
+    ]
+  },
+  "function UseProxy : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseProxy",
+    "body": [
+      "UseProxy"
+    ]
+  },
+  "function ProxyIP : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ProxyIP",
+    "body": [
+      "ProxyIP"
+    ]
+  },
+  "function ProxyPort : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ProxyPort",
+    "body": [
+      "ProxyPort"
+    ]
+  },
+  "function ProfileName : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ProfileName",
+    "body": [
+      "ProfileName"
+    ]
+  },
+  "function ChangeProfile(Name : String) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ChangeProfile",
+    "body": [
+      "ChangeProfile(${1:Name : String});"
+    ]
+  },
+  "function StealthInfo : TAboutStealth;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "StealthInfo",
+    "body": [
+      "StealthInfo"
+    ]
+  },
+  "function StealthPath : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "StealthPath",
+    "body": [
+      "StealthPath"
+    ]
+  },
+  "function CurrentScriptPath : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CurrentScriptPath",
+    "body": [
+      "CurrentScriptPath"
+    ]
+  },
+  "function StealthProfilePath : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "StealthProfilePath",
+    "body": [
+      "StealthProfilePath"
+    ]
+  },
+  "function ShardPath : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ShardPath",
+    "body": [
+      "ShardPath"
+    ]
+  },
+  "procedure PauseCurrentScript;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PauseCurrentScript",
+    "body": [
+      "PauseCurrentScript"
+    ]
+  },
+  "procedure Halt;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Halt",
+    "body": [
+      "Halt"
+    ]
+  },
+  "function CurrentLine : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CurrentLine",
+    "body": [
+      "CurrentLine"
+    ]
+  },
+  "procedure WinExec(FileName : String;Parameters : String = '');": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WinExec",
+    "body": [
+      "WinExec(${1:FileName : String}; ${2:Parameters : String = ''});"
+    ]
+  },
+  "procedure PrintScriptMethodsList(FileName : String = '';SortedList : Boolean = False);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PrintScriptMethodsList",
+    "body": [
+      "PrintScriptMethodsList(${1:FileName : String = ''}; ${2:SortedList : Boolean = False});"
+    ]
+  },
+  "procedure FillNewWindow(s : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FillNewWindow",
+    "body": [
+      "FillNewWindow(${1:s : String});"
+    ]
+  },
+  "procedure ClearInfoWindow;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearInfoWindow",
+    "body": [
+      "ClearInfoWindow"
+    ]
+  },
+  "function ClipboardGetString : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClipboardGetString",
+    "body": [
+      "ClipboardGetString"
+    ]
+  },
+  "procedure ClipboardSetString(S: String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClipboardSetString",
+    "body": [
+      "ClipboardSetString(${1:S: String});"
+    ]
+  },
+  "function Backpack : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Backpack",
+    "body": [
+      "Backpack"
+    ]
+  },
+  "function Ground : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Ground",
+    "body": [
+      "Ground"
+    ]
+  },
+  "function Sex : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Sex",
+    "body": [
+      "Sex"
+    ]
+  },
+  "function CharTitle : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CharTitle",
+    "body": [
+      "CharTitle"
+    ]
+  },
+  "function Armor : SmallInt;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Armor",
+    "body": [
+      "Armor"
+    ]
+  },
+  "function Weight : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Weight",
+    "body": [
+      "Weight"
+    ]
+  },
+  "function MaxWeight : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MaxWeight",
+    "body": [
+      "MaxWeight"
+    ]
+  },
+  "function Race : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Race",
+    "body": [
+      "Race"
+    ]
+  },
+  "function WorldNum : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WorldNum",
+    "body": [
+      "WorldNum"
+    ]
+  },
+  "function PetsCurrent : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PetsCurrent",
+    "body": [
+      "PetsCurrent"
+    ]
+  },
+  "function PetsMax : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PetsMax",
+    "body": [
+      "PetsMax"
+    ]
+  },
+  "function FireResist : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FireResist",
+    "body": [
+      "FireResist"
+    ]
+  },
+  "function ColdResist : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ColdResist",
+    "body": [
+      "ColdResist"
+    ]
+  },
+  "function PoisonResist : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PoisonResist",
+    "body": [
+      "PoisonResist"
+    ]
+  },
+  "function EnergyResist : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "EnergyResist",
+    "body": [
+      "EnergyResist"
+    ]
+  },
+  "function LastContainer : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LastContainer",
+    "body": [
+      "LastContainer"
+    ]
+  },
+  "function LastTarget : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LastTarget",
+    "body": [
+      "LastTarget"
+    ]
+  },
+  "function LastAttack : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LastAttack",
+    "body": [
+      "LastAttack"
+    ]
+  },
+  "function LastStatus : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LastStatus",
+    "body": [
+      "LastStatus"
+    ]
+  },
+  "function LastObject : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LastObject",
+    "body": [
+      "LastObject"
+    ]
+  },
+  "function Hidden : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Hidden",
+    "body": [
+      "Hidden"
+    ]
+  },
+  "function Poisoned : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Poisoned",
+    "body": [
+      "Poisoned"
+    ]
+  },
+  "function Paralyzed : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Paralyzed",
+    "body": [
+      "Paralyzed"
+    ]
+  },
+  "function Dead : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Dead",
+    "body": [
+      "Dead"
+    ]
+  },
+  "function WarMode : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WarMode",
+    "body": [
+      "WarMode"
+    ]
+  },
+  "function WarTargetID : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WarTargetID",
+    "body": [
+      "WarTargetID"
+    ]
+  },
+  "procedure SetWarMode(Value : Boolean);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetWarMode",
+    "body": [
+      "SetWarMode(${1:Value : Boolean});"
+    ]
+  },
+  "procedure Attack(ObjdID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Attack",
+    "body": [
+      "Attack(${1:ObjdID : Cardinal});"
+    ]
+  },
+  "procedure UseSelfPaperdollScroll;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseSelfPaperdollScroll",
+    "body": [
+      "UseSelfPaperdollScroll"
+    ]
+  },
+  "procedure UseOtherPaperdollScroll(ID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseOtherPaperdollScroll",
+    "body": [
+      "UseOtherPaperdollScroll(${1:ID : Cardinal});"
+    ]
+  },
+  "function GetName(ObjID : Cardinal) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetName",
+    "body": [
+      "GetName(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function Str : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Str",
+    "body": [
+      "Str"
+    ]
+  },
+  "function Int : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Int",
+    "body": [
+      "Int"
+    ]
+  },
+  "function Dex : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Dex",
+    "body": [
+      "Dex"
+    ]
+  },
+  "function Life : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Life",
+    "body": [
+      "Life"
+    ]
+  },
+  "function HP : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HP",
+    "body": [
+      "HP"
+    ]
+  },
+  "function Mana : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Mana",
+    "body": [
+      "Mana"
+    ]
+  },
+  "function Stam : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Stam",
+    "body": [
+      "Stam"
+    ]
+  },
+  "function MaxLife : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MaxLife",
+    "body": [
+      "MaxLife"
+    ]
+  },
+  "function MaxHP : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MaxHP",
+    "body": [
+      "MaxHP"
+    ]
+  },
+  "function MaxMana : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MaxMana",
+    "body": [
+      "MaxMana"
+    ]
+  },
+  "function MaxStam : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MaxStam",
+    "body": [
+      "MaxStam"
+    ]
+  },
+  "function Luck : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Luck",
+    "body": [
+      "Luck"
+    ]
+  },
+  "function ExtendedInfo : TExtendedInfo;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ExtendedInfo",
+    "body": [
+      "ExtendedInfo"
+    ]
+  },
+  "function GetParent(ObjID : Cardinal) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetParent",
+    "body": [
+      "GetParent(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function RhandLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RhandLayer",
+    "body": [
+      "RhandLayer"
+    ]
+  },
+  "function LhandLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LhandLayer",
+    "body": [
+      "LhandLayer"
+    ]
+  },
+  "function ShoesLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ShoesLayer",
+    "body": [
+      "ShoesLayer"
+    ]
+  },
+  "function PantsLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PantsLayer",
+    "body": [
+      "PantsLayer"
+    ]
+  },
+  "function ShirtLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ShirtLayer",
+    "body": [
+      "ShirtLayer"
+    ]
+  },
+  "function HatLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HatLayer",
+    "body": [
+      "HatLayer"
+    ]
+  },
+  "function GlovesLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GlovesLayer",
+    "body": [
+      "GlovesLayer"
+    ]
+  },
+  "function RingLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RingLayer",
+    "body": [
+      "RingLayer"
+    ]
+  },
+  "function TalismanLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TalismanLayer",
+    "body": [
+      "TalismanLayer"
+    ]
+  },
+  "function NeckLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "NeckLayer",
+    "body": [
+      "NeckLayer"
+    ]
+  },
+  "function HairLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HairLayer",
+    "body": [
+      "HairLayer"
+    ]
+  },
+  "function WaistLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaistLayer",
+    "body": [
+      "WaistLayer"
+    ]
+  },
+  "function TorsoLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TorsoLayer",
+    "body": [
+      "TorsoLayer"
+    ]
+  },
+  "function BraceLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BraceLayer",
+    "body": [
+      "BraceLayer"
+    ]
+  },
+  "function BeardLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BeardLayer",
+    "body": [
+      "BeardLayer"
+    ]
+  },
+  "function TorsoHLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TorsoHLayer",
+    "body": [
+      "TorsoHLayer"
+    ]
+  },
+  "function EarLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "EarLayer",
+    "body": [
+      "EarLayer"
+    ]
+  },
+  "function ArmsLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ArmsLayer",
+    "body": [
+      "ArmsLayer"
+    ]
+  },
+  "function CloakLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CloakLayer",
+    "body": [
+      "CloakLayer"
+    ]
+  },
+  "function BpackLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BpackLayer",
+    "body": [
+      "BpackLayer"
+    ]
+  },
+  "function RobeLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RobeLayer",
+    "body": [
+      "RobeLayer"
+    ]
+  },
+  "function EggsLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "EggsLayer",
+    "body": [
+      "EggsLayer"
+    ]
+  },
+  "function LegsLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "LegsLayer",
+    "body": [
+      "LegsLayer"
+    ]
+  },
+  "function HorseLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HorseLayer",
+    "body": [
+      "HorseLayer"
+    ]
+  },
+  "function RstkLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RstkLayer",
+    "body": [
+      "RstkLayer"
+    ]
+  },
+  "function NRstkLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "NRstkLayer",
+    "body": [
+      "NRstkLayer"
+    ]
+  },
+  "function SellLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SellLayer",
+    "body": [
+      "SellLayer"
+    ]
+  },
+  "function BankLayer : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BankLayer",
+    "body": [
+      "BankLayer"
+    ]
+  },
+  "function ObjAtLayer(LayerType : Byte) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ObjAtLayer",
+    "body": [
+      "ObjAtLayer(${1:LayerType : Byte});"
+    ]
+  },
+  "function ObjAtLayerEx(LayerType : Byte;PlayerID : Cardinal) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ObjAtLayerEx",
+    "body": [
+      "ObjAtLayerEx(${1:LayerType : Byte}; ${2:PlayerID : Cardinal});"
+    ]
+  },
+  "function GetLayer(Obj : Cardinal) : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetLayer",
+    "body": [
+      "GetLayer(${1:Obj : Cardinal});"
+    ]
+  },
+  "function TargetPresent : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TargetPresent",
+    "body": [
+      "TargetPresent"
+    ]
+  },
+  "function TargetID : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TargetID",
+    "body": [
+      "TargetID"
+    ]
+  },
+  "function WaitForTarget(MaxWaitTimeMS : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitForTarget",
+    "body": [
+      "WaitForTarget(${1:MaxWaitTimeMS : Integer});"
+    ]
+  },
+  "procedure CancelTarget;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CancelTarget",
+    "body": [
+      "CancelTarget"
+    ]
+  },
+  "procedure TargetToObject(ObjectID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TargetToObject",
+    "body": [
+      "TargetToObject(${1:ObjectID : Cardinal});"
+    ]
+  },
+  "procedure TargetToXYZ(X : Word;Y : Word;Z : ShortInt);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TargetToXYZ",
+    "body": [
+      "TargetToXYZ(${1:X : Word}; ${2:Y : Word}; ${3:Z : ShortInt});"
+    ]
+  },
+  "procedure TargetToTile(TileModel : Word;X : Integer;Y : Integer;Z : Integer);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TargetToTile",
+    "body": [
+      "TargetToTile(${1:TileModel : Word}; ${2:X : Integer}; ${3:Y : Integer}; ${4:Z : Integer});"
+    ]
+  },
+  "procedure WaitTargetObject(ObjID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitTargetObject",
+    "body": [
+      "WaitTargetObject(${1:ObjID : Cardinal});"
+    ]
+  },
+  "procedure WaitTargetTile(Tile : Word;X : Integer;Y : Integer;Z : Integer);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitTargetTile",
+    "body": [
+      "WaitTargetTile(${1:Tile : Word}; ${2:X : Integer}; ${3:Y : Integer}; ${4:Z : Integer});"
+    ]
+  },
+  "procedure WaitTargetXYZ(X : Integer;Y : Integer;Z : Integer);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitTargetXYZ",
+    "body": [
+      "WaitTargetXYZ(${1:X : Integer}; ${2:Y : Integer}; ${3:Z : Integer});"
+    ]
+  },
+  "procedure WaitTargetSelf;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitTargetSelf",
+    "body": [
+      "WaitTargetSelf"
+    ]
+  },
+  "procedure WaitTargetType(ObjType : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitTargetType",
+    "body": [
+      "WaitTargetType(${1:ObjType : Word});"
+    ]
+  },
+  "procedure CancelWaitTarget;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CancelWaitTarget",
+    "body": [
+      "CancelWaitTarget"
+    ]
+  },
+  "procedure WaitTargetGround(ObjType : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitTargetGround",
+    "body": [
+      "WaitTargetGround(${1:ObjType : Word});"
+    ]
+  },
+  "procedure WaitTargetLast;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitTargetLast",
+    "body": [
+      "WaitTargetLast"
+    ]
+  },
+  "procedure UOSay(Text : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UOSay",
+    "body": [
+      "UOSay(${1:Text : String});"
+    ]
+  },
+  "procedure UOSayColor(Text : String;Color : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UOSayColor",
+    "body": [
+      "UOSayColor(${1:Text : String}; ${2:Color : Word});"
+    ]
+  },
+  "procedure ConsoleEntryReply(Text : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ConsoleEntryReply",
+    "body": [
+      "ConsoleEntryReply(${1:Text : String});"
+    ]
+  },
+  "procedure ConsoleEntryUnicodeReply(Text : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ConsoleEntryUnicodeReply",
+    "body": [
+      "ConsoleEntryUnicodeReply(${1:Text : String});"
+    ]
+  },
+  "function UseSkill(SkillName : String) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseSkill",
+    "body": [
+      "UseSkill(${1:SkillName : String});"
+    ]
+  },
+  "procedure SkillLockState(SkillName : String;skillState : Byte);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SkillLockState",
+    "body": [
+      "SkillLockState(${1:SkillName : String}; ${2:skillState : Byte});"
+    ]
+  },
+  "procedure SetSkillLockState(SkillName : String;skillState : Byte);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetSkillLockState",
+    "body": [
+      "SetSkillLockState(${1:SkillName : String}; ${2:skillState : Byte});"
+    ]
+  },
+  "function GetSkillLockState(SkillName : String) : ShortInt;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetSkillLockState",
+    "body": [
+      "GetSkillLockState(${1:SkillName : String});"
+    ]
+  },
+  "function GetSkillValue(SkillName : String) : Double;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetSkillValue",
+    "body": [
+      "GetSkillValue(${1:SkillName : String});"
+    ]
+  },
+  "function GetSkillCurrentValue(SkillName : String) : Double;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetSkillCurrentValue",
+    "body": [
+      "GetSkillCurrentValue(${1:SkillName : String});"
+    ]
+  },
+  "function GetSkillCap(SkillName : String) : Double;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetSkillCap",
+    "body": [
+      "GetSkillCap(${1:SkillName : String});"
+    ]
+  },
+  "procedure UseObject(ObjectID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseObject",
+    "body": [
+      "UseObject(${1:ObjectID : Cardinal});"
+    ]
+  },
+  "function UseType(ObjType : Word;Color : Word) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseType",
+    "body": [
+      "UseType(${1:ObjType : Word}; ${2:Color : Word});"
+    ]
+  },
+  "function UseFromGround(ObjType : Word;Color : Word) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseFromGround",
+    "body": [
+      "UseFromGround(${1:ObjType : Word}; ${2:Color : Word});"
+    ]
+  },
+  "procedure UseItemOnMobile(ItemSerial : Cardinal;TargetSerial : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseItemOnMobile",
+    "body": [
+      "UseItemOnMobile(${1:ItemSerial : Cardinal}; ${2:TargetSerial : Cardinal});"
+    ]
+  },
+  "procedure BandageSelf;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BandageSelf",
+    "body": [
+      "BandageSelf"
+    ]
+  },
+  "procedure ClickOnObject(ObjectID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClickOnObject",
+    "body": [
+      "ClickOnObject(${1:ObjectID : Cardinal});"
+    ]
+  },
+  "function Cast(SpellName : String) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Cast",
+    "body": [
+      "Cast(${1:SpellName : String});"
+    ]
+  },
+  "function CastToObject(SpellName : String;ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CastToObject",
+    "body": [
+      "CastToObject(${1:SpellName : String}; ${2:ObjID : Cardinal});"
+    ]
+  },
+  "function GetActiveAbility : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetActiveAbility",
+    "body": [
+      "GetActiveAbility"
+    ]
+  },
+  "procedure UsePrimaryAbility;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UsePrimaryAbility",
+    "body": [
+      "UsePrimaryAbility"
+    ]
+  },
+  "procedure ToggleFly;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ToggleFly",
+    "body": [
+      "ToggleFly"
+    ]
+  },
+  "procedure UseSecondaryAbility;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseSecondaryAbility",
+    "body": [
+      "UseSecondaryAbility"
+    ]
+  },
+  "procedure ClearJournalIgnore;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearJournalIgnore",
+    "body": [
+      "ClearJournalIgnore"
+    ]
+  },
+  "procedure ClearChatUserIgnore;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearChatUserIgnore",
+    "body": [
+      "ClearChatUserIgnore"
+    ]
+  },
+  "procedure AddJournalIgnore(Str : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AddJournalIgnore",
+    "body": [
+      "AddJournalIgnore(${1:Str : String});"
+    ]
+  },
+  "procedure AddChatUserIgnore(User : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AddChatUserIgnore",
+    "body": [
+      "AddChatUserIgnore(${1:User : String});"
+    ]
+  },
+  "function FindType(ObjType : Word;Container : Cardinal) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FindType",
+    "body": [
+      "FindType(${1:ObjType : Word}; ${2:Container : Cardinal});"
+    ]
+  },
+  "function FindTypeEx(ObjType : Word;Color : Word;Container : Cardinal;InSub : Boolean) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FindTypeEx",
+    "body": [
+      "FindTypeEx(${1:ObjType : Word}; ${2:Color : Word}; ${3:Container : Cardinal}; ${4:InSub : Boolean});"
+    ]
+  },
+  "function FindTypesArrayEx(ObjTypes : array of Word;Colors : array of Word;Containers : array of Cardinal;InSub : Boolean) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FindTypesArrayEx",
+    "body": [
+      "FindTypesArrayEx(${1:ObjTypes : array of Word}; ${2:Colors : array of Word}; ${3:Containers : array of Cardinal}; ${4:InSub : Boolean});"
+    ]
+  },
+  "function FindNotoriety(ObjType : Word;Notoriety : Byte) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FindNotoriety",
+    "body": [
+      "FindNotoriety(${1:ObjType : Word}; ${2:Notoriety : Byte});"
+    ]
+  },
+  "function FindAtCoord(X : Word;Y : Word) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FindAtCoord",
+    "body": [
+      "FindAtCoord(${1:X : Word}; ${2:Y : Word});"
+    ]
+  },
+  "procedure Ignore(ObjID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Ignore",
+    "body": [
+      "Ignore(${1:ObjID : Cardinal});"
+    ]
+  },
+  "procedure IgnoreOff(ObjID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IgnoreOff",
+    "body": [
+      "IgnoreOff(${1:ObjID : Cardinal});"
+    ]
+  },
+  "procedure IgnoreReset;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IgnoreReset",
+    "body": [
+      "IgnoreReset"
+    ]
+  },
+  "function GetIgnoreList(var UserList : TStringList) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetIgnoreList",
+    "body": [
+      "GetIgnoreList(${1:var UserList : TStringList});"
+    ]
+  },
+  "function GetFindedList(var UserList : TStringList) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetFindedList",
+    "body": [
+      "GetFindedList(${1:var UserList : TStringList});"
+    ]
+  },
+  "function GetFoundItems : TCardinalDynArray;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetFoundItems",
+    "body": [
+      "GetFoundItems"
+    ]
+  },
+  "function FindItem : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FindItem",
+    "body": [
+      "FindItem"
+    ]
+  },
+  "function FindCount : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FindCount",
+    "body": [
+      "FindCount"
+    ]
+  },
+  "function FindQuantity : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FindQuantity",
+    "body": [
+      "FindQuantity"
+    ]
+  },
+  "function FindFullQuantity : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "FindFullQuantity",
+    "body": [
+      "FindFullQuantity"
+    ]
+  },
+  "function PredictedX : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PredictedX",
+    "body": [
+      "PredictedX"
+    ]
+  },
+  "function PredictedY : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PredictedY",
+    "body": [
+      "PredictedY"
+    ]
+  },
+  "function PredictedZ : ShortInt;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PredictedZ",
+    "body": [
+      "PredictedZ"
+    ]
+  },
+  "function PredictedDirection : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PredictedDirection",
+    "body": [
+      "PredictedDirection"
+    ]
+  },
+  "function GetX(ObjID : Cardinal) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetX",
+    "body": [
+      "GetX(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetY(ObjID : Cardinal) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetY",
+    "body": [
+      "GetY(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetZ(ObjID : Cardinal) : ShortInt;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetZ",
+    "body": [
+      "GetZ(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetAltName(ObjID : Cardinal) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetAltName",
+    "body": [
+      "GetAltName(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetTitle(ObjID : Cardinal) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetTitle",
+    "body": [
+      "GetTitle(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetCliloc(ObjID : Cardinal) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetCliloc",
+    "body": [
+      "GetCliloc(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetType(ObjID : Cardinal) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetType",
+    "body": [
+      "GetType(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetQuantity(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetQuantity",
+    "body": [
+      "GetQuantity(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetPrice(ObjID : Cardinal) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetPrice",
+    "body": [
+      "GetPrice(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetDirection(ObjID : Cardinal) : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetDirection",
+    "body": [
+      "GetDirection(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetDistance(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetDistance",
+    "body": [
+      "GetDistance(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetColor(ObjID : Cardinal) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetColor",
+    "body": [
+      "GetColor(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetStr(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetStr",
+    "body": [
+      "GetStr(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetInt(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetInt",
+    "body": [
+      "GetInt(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetDex(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetDex",
+    "body": [
+      "GetDex(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetHP(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetHP",
+    "body": [
+      "GetHP(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetMaxHP(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetMaxHP",
+    "body": [
+      "GetMaxHP(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetMana(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetMana",
+    "body": [
+      "GetMana(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetMaxMana(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetMaxMana",
+    "body": [
+      "GetMaxMana(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetStam(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetStam",
+    "body": [
+      "GetStam(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetMaxStam(ObjID : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetMaxStam",
+    "body": [
+      "GetMaxStam(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetNotoriety(ObjID : Cardinal) : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetNotoriety",
+    "body": [
+      "GetNotoriety(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsWarMode(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsWarMode",
+    "body": [
+      "IsWarMode(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsNPC(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsNPC",
+    "body": [
+      "IsNPC(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsDead(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsDead",
+    "body": [
+      "IsDead(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsRunning(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsRunning",
+    "body": [
+      "IsRunning(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsContainer(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsContainer",
+    "body": [
+      "IsContainer(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsHidden(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsHidden",
+    "body": [
+      "IsHidden(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsMovable(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsMovable",
+    "body": [
+      "IsMovable(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsYellowHits(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsYellowHits",
+    "body": [
+      "IsYellowHits(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsPoisoned(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsPoisoned",
+    "body": [
+      "IsPoisoned(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsParalyzed(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsParalyzed",
+    "body": [
+      "IsParalyzed(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function IsFemale(ObjID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsFemale",
+    "body": [
+      "IsFemale(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function DragItem(ItemID : Cardinal;Count : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "DragItem",
+    "body": [
+      "DragItem(${1:ItemID : Cardinal}; ${2:Count : Integer});"
+    ]
+  },
+  "function DropItem(MoveIntoID : Cardinal;X : Integer;Y : Integer;Z : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "DropItem",
+    "body": [
+      "DropItem(${1:MoveIntoID : Cardinal}; ${2:X : Integer}; ${3:Y : Integer}; ${4:Z : Integer});"
+    ]
+  },
+  "function MoveItem(ItemID : Cardinal;Count : Integer;MoveIntoID : Cardinal;X : Integer;Y : Integer;Z : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MoveItem",
+    "body": [
+      "MoveItem(${1:ItemID : Cardinal}; ${2:Count : Integer}; ${3:MoveIntoID : Cardinal}; ${4:X : Integer}; ${5:Y : Integer}; ${6:Z : Integer});"
+    ]
+  },
+  "function Grab(ItemID : Cardinal;Count : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Grab",
+    "body": [
+      "Grab(${1:ItemID : Cardinal}; ${2:Count : Integer});"
+    ]
+  },
+  "function Drop(ItemID : Cardinal;Count : Integer;X : Integer;Y : Integer;Z : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Drop",
+    "body": [
+      "Drop(${1:ItemID : Cardinal}; ${2:Count : Integer}; ${3:X : Integer}; ${4:Y : Integer}; ${5:Z : Integer});"
+    ]
+  },
+  "function DropHere(ItemID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "DropHere",
+    "body": [
+      "DropHere(${1:ItemID : Cardinal});"
+    ]
+  },
+  "function MoveItems(Container : Cardinal;ItemsType : Word;ItemsColor : Word;MoveIntoID : Cardinal;X : Integer;Y : Integer;Z : Integer;DelayMS : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MoveItems",
+    "body": [
+      "MoveItems(${1:Container : Cardinal}; ${2:ItemsType : Word}; ${3:ItemsColor : Word}; ${4:MoveIntoID : Cardinal}; ${5:X : Integer}; ${6:Y : Integer}; ${7:Z : Integer}; ${8:DelayMS : Integer});"
+    ]
+  },
+  "function MoveItemsEx(Container : Cardinal;ItemsType : Word;ItemsColor : Word;MoveIntoID : Cardinal;X : Integer;Y : Integer;Z : Integer;DelayMS : Integer;MaxItems : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MoveItemsEx",
+    "body": [
+      "MoveItemsEx(${1:Container : Cardinal}; ${2:ItemsType : Word}; ${3:ItemsColor : Word}; ${4:MoveIntoID : Cardinal}; ${5:X : Integer}; ${6:Y : Integer}; ${7:Z : Integer}; ${8:DelayMS : Integer}; ${9:MaxItems : Integer});"
+    ]
+  },
+  "procedure RequestContextMenu(ID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RequestContextMenu",
+    "body": [
+      "RequestContextMenu(${1:ID : Cardinal});"
+    ]
+  },
+  "procedure SetContextMenuHook(MenuID : Cardinal;EntryNumber : Byte);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetContextMenuHook",
+    "body": [
+      "SetContextMenuHook(${1:MenuID : Cardinal}; ${2:EntryNumber : Byte});"
+    ]
+  },
+  "function IsTrade : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsTrade",
+    "body": [
+      "IsTrade"
+    ]
+  },
+  "function GetTradeContainer(TradeNum : Byte;Num : Byte) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetTradeContainer",
+    "body": [
+      "GetTradeContainer(${1:TradeNum : Byte}; ${2:Num : Byte});"
+    ]
+  },
+  "function TradeCheck(TradeNum : Byte;Num : Byte) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TradeCheck",
+    "body": [
+      "TradeCheck(${1:TradeNum : Byte}; ${2:Num : Byte});"
+    ]
+  },
+  "function GetTradeOpponent(TradeNum : Byte) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetTradeOpponent",
+    "body": [
+      "GetTradeOpponent(${1:TradeNum : Byte});"
+    ]
+  },
+  "function GetTradeOpponentName(TradeNum : Byte) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetTradeOpponentName",
+    "body": [
+      "GetTradeOpponentName(${1:TradeNum : Byte});"
+    ]
+  },
+  "function TradeCount : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "TradeCount",
+    "body": [
+      "TradeCount"
+    ]
+  },
+  "procedure ConfirmTrade(TradeNum : Byte);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ConfirmTrade",
+    "body": [
+      "ConfirmTrade(${1:TradeNum : Byte});"
+    ]
+  },
+  "function CancelTrade(TradeNum : Byte) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CancelTrade",
+    "body": [
+      "CancelTrade(${1:TradeNum : Byte});"
+    ]
+  },
+  "procedure WaitMenu(UP : String;UC : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitMenu",
+    "body": [
+      "WaitMenu(${1:UP : String}; ${2:UC : String});"
+    ]
+  },
+  "procedure CloseMenu;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CloseMenu",
+    "body": [
+      "CloseMenu"
+    ]
+  },
+  "procedure AutoMenu(UP : String;UC : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AutoMenu",
+    "body": [
+      "AutoMenu(${1:UP : String}; ${2:UC : String});"
+    ]
+  },
+  "procedure CancelMenu;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CancelMenu",
+    "body": [
+      "CancelMenu"
+    ]
+  },
+  "function MenuHookPresent : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MenuHookPresent",
+    "body": [
+      "MenuHookPresent"
+    ]
+  },
+  "function MenuPresent : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MenuPresent",
+    "body": [
+      "MenuPresent"
+    ]
+  },
+  "procedure WaitGump(Value : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitGump",
+    "body": [
+      "WaitGump(${1:Value : String});"
+    ]
+  },
+  "procedure GumpAutoTextEntry(TextEntryID : Integer;Value : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GumpAutoTextEntry",
+    "body": [
+      "GumpAutoTextEntry(${1:TextEntryID : Integer}; ${2:Value : String});"
+    ]
+  },
+  "procedure GumpAutoRadiobutton(RadiobuttonID : Integer;Value : Integer);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GumpAutoRadiobutton",
+    "body": [
+      "GumpAutoRadiobutton(${1:RadiobuttonID : Integer}; ${2:Value : Integer});"
+    ]
+  },
+  "procedure GumpAutoCheckBox(CheckBoxID : Integer;Value : Integer);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GumpAutoCheckBox",
+    "body": [
+      "GumpAutoCheckBox(${1:CheckBoxID : Integer}; ${2:Value : Integer});"
+    ]
+  },
+  "function NumGumpButton(GumpIndex : Word;Value : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "NumGumpButton",
+    "body": [
+      "NumGumpButton(${1:GumpIndex : Word}; ${2:Value : Integer});"
+    ]
+  },
+  "function NumGumpTextEntry(GumpIndex : Word;TextEntryID : Integer;Value : String) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "NumGumpTextEntry",
+    "body": [
+      "NumGumpTextEntry(${1:GumpIndex : Word}; ${2:TextEntryID : Integer}; ${3:Value : String});"
+    ]
+  },
+  "function NumGumpRadiobutton(GumpIndex : Word;RadiobuttonID : Integer;Value : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "NumGumpRadiobutton",
+    "body": [
+      "NumGumpRadiobutton(${1:GumpIndex : Word}; ${2:RadiobuttonID : Integer}; ${3:Value : Integer});"
+    ]
+  },
+  "function NumGumpCheckBox(GumpIndex : Word;CBID : Integer;Value : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "NumGumpCheckBox",
+    "body": [
+      "NumGumpCheckBox(${1:GumpIndex : Word}; ${2:CBID : Integer}; ${3:Value : Integer});"
+    ]
+  },
+  "procedure WaitTextEntry(Value : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitTextEntry",
+    "body": [
+      "WaitTextEntry(${1:Value : String});"
+    ]
+  },
+  "function GetGumpsCount : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetGumpsCount",
+    "body": [
+      "GetGumpsCount"
+    ]
+  },
+  "function IsGump : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsGump",
+    "body": [
+      "IsGump"
+    ]
+  },
+  "function GetGumpSerial(GumpIndex : Word) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetGumpSerial",
+    "body": [
+      "GetGumpSerial(${1:GumpIndex : Word});"
+    ]
+  },
+  "function GetGumpID(GumpIndex : Word) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetGumpID",
+    "body": [
+      "GetGumpID(${1:GumpIndex : Word});"
+    ]
+  },
+  "function IsGumpCanBeClosed(GumpIndex : Word) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsGumpCanBeClosed",
+    "body": [
+      "IsGumpCanBeClosed(${1:GumpIndex : Word});"
+    ]
+  },
+  "procedure GetGumpTextLines(GumpIndex : Word;var TL : TStringList);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetGumpTextLines",
+    "body": [
+      "GetGumpTextLines(${1:GumpIndex : Word}; ${2:var TL : TStringList});"
+    ]
+  },
+  "procedure GetGumpFullLines(GumpIndex : Word;var TL : TStringList);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetGumpFullLines",
+    "body": [
+      "GetGumpFullLines(${1:GumpIndex : Word}; ${2:var TL : TStringList});"
+    ]
+  },
+  "procedure GetGumpShortLines(GumpIndex : Word;var TL : TStringList);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetGumpShortLines",
+    "body": [
+      "GetGumpShortLines(${1:GumpIndex : Word}; ${2:var TL : TStringList});"
+    ]
+  },
+  "procedure GetGumpButtonsDescription(GumpIndex : Word;var TL : TStringList);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetGumpButtonsDescription",
+    "body": [
+      "GetGumpButtonsDescription(${1:GumpIndex : Word}; ${2:var TL : TStringList});"
+    ]
+  },
+  "procedure GetGumpInfo(GumpIndex : Word;var GumpInfo : TGumpInfo);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetGumpInfo",
+    "body": [
+      "GetGumpInfo(${1:GumpIndex : Word}; ${2:var GumpInfo : TGumpInfo});"
+    ]
+  },
+  "procedure CloseSimpleGump(GumpIndex : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CloseSimpleGump",
+    "body": [
+      "CloseSimpleGump(${1:GumpIndex : Word});"
+    ]
+  },
+  "procedure AddGumpIgnoreBySerial(Serial : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AddGumpIgnoreBySerial",
+    "body": [
+      "AddGumpIgnoreBySerial(${1:Serial : Cardinal});"
+    ]
+  },
+  "procedure AddGumpIgnoreByID(ID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AddGumpIgnoreByID",
+    "body": [
+      "AddGumpIgnoreByID(${1:ID : Cardinal});"
+    ]
+  },
+  "procedure ClearGumpsIgnore;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearGumpsIgnore",
+    "body": [
+      "ClearGumpsIgnore"
+    ]
+  },
+  "function WearItem(Layer : Byte;Obj : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WearItem",
+    "body": [
+      "WearItem(${1:Layer : Byte}; ${2:Obj : Cardinal});"
+    ]
+  },
+  "function Disarm : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Disarm",
+    "body": [
+      "Disarm"
+    ]
+  },
+  "function Equip(Layer : Byte;Obj : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Equip",
+    "body": [
+      "Equip(${1:Layer : Byte}; ${2:Obj : Cardinal});"
+    ]
+  },
+  "function Equipt(Layer : Byte;ObjType : Word) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Equipt",
+    "body": [
+      "Equipt(${1:Layer : Byte}; ${2:ObjType : Word});"
+    ]
+  },
+  "function Unequip(Layer : Byte) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Unequip",
+    "body": [
+      "Unequip(${1:Layer : Byte});"
+    ]
+  },
+  "function Undress : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Undress",
+    "body": [
+      "Undress"
+    ]
+  },
+  "function DressSavedSet : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "DressSavedSet",
+    "body": [
+      "DressSavedSet"
+    ]
+  },
+  "function EquipDressSet : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "EquipDressSet",
+    "body": [
+      "EquipDressSet"
+    ]
+  },
+  "procedure SetDress;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetDress",
+    "body": [
+      "SetDress"
+    ]
+  },
+  "function Count(ObjType : Word) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Count",
+    "body": [
+      "Count(${1:ObjType : Word});"
+    ]
+  },
+  "function CountGround(ObjType : Word) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CountGround",
+    "body": [
+      "CountGround(${1:ObjType : Word});"
+    ]
+  },
+  "function CountEx(ObjType : Word;Color : Word;Container : Cardinal) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CountEx",
+    "body": [
+      "CountEx(${1:ObjType : Word}; ${2:Color : Word}; ${3:Container : Cardinal});"
+    ]
+  },
+  "function BP : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BP",
+    "body": [
+      "BP"
+    ]
+  },
+  "function BM : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BM",
+    "body": [
+      "BM"
+    ]
+  },
+  "function GA : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GA",
+    "body": [
+      "GA"
+    ]
+  },
+  "function GS : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GS",
+    "body": [
+      "GS"
+    ]
+  },
+  "function MR : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MR",
+    "body": [
+      "MR"
+    ]
+  },
+  "function NS : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "NS",
+    "body": [
+      "NS"
+    ]
+  },
+  "function SA : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SA",
+    "body": [
+      "SA"
+    ]
+  },
+  "function SS : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SS",
+    "body": [
+      "SS"
+    ]
+  },
+  "function BPCount : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BPCount",
+    "body": [
+      "BPCount"
+    ]
+  },
+  "function BMCount : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "BMCount",
+    "body": [
+      "BMCount"
+    ]
+  },
+  "function GACount : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GACount",
+    "body": [
+      "GACount"
+    ]
+  },
+  "function GSCount : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GSCount",
+    "body": [
+      "GSCount"
+    ]
+  },
+  "function MRCount : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MRCount",
+    "body": [
+      "MRCount"
+    ]
+  },
+  "function NSCount : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "NSCount",
+    "body": [
+      "NSCount"
+    ]
+  },
+  "function SACount : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SACount",
+    "body": [
+      "SACount"
+    ]
+  },
+  "function SSCount : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SSCount",
+    "body": [
+      "SSCount"
+    ]
+  },
+  "procedure AutoBuy(ItemType : Word;ItemColor : Word;Quantity : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AutoBuy",
+    "body": [
+      "AutoBuy(${1:ItemType : Word}; ${2:ItemColor : Word}; ${3:Quantity : Word});"
+    ]
+  },
+  "procedure AutoBuyEx(ItemType : Word;ItemColor : Word;Quantity : Word;Price : Cardinal;Name : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AutoBuyEx",
+    "body": [
+      "AutoBuyEx(${1:ItemType : Word}; ${2:ItemColor : Word}; ${3:Quantity : Word}; ${4:Price : Cardinal}; ${5:Name : String});"
+    ]
+  },
+  "procedure GetShopList(var List : TStringList);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetShopList",
+    "body": [
+      "GetShopList(${1:var List : TStringList});"
+    ]
+  },
+  "procedure ClearShopList;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearShopList",
+    "body": [
+      "ClearShopList"
+    ]
+  },
+  "function GetAutoBuyDelay : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetAutoBuyDelay",
+    "body": [
+      "GetAutoBuyDelay"
+    ]
+  },
+  "procedure SetAutoBuyDelay(Value : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetAutoBuyDelay",
+    "body": [
+      "SetAutoBuyDelay(${1:Value : Word});"
+    ]
+  },
+  "procedure AutoSell(ItemType : Word;ItemColor : Word;Quantity : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AutoSell",
+    "body": [
+      "AutoSell(${1:ItemType : Word}; ${2:ItemColor : Word}; ${3:Quantity : Word});"
+    ]
+  },
+  "function GetAutoSellDelay : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetAutoSellDelay",
+    "body": [
+      "GetAutoSellDelay"
+    ]
+  },
+  "procedure SetAutoSellDelay(Value : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetAutoSellDelay",
+    "body": [
+      "SetAutoSellDelay(${1:Value : Word});"
+    ]
+  },
+  "function GetTileFlags(Group : Byte;Tile : Word) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetTileFlags",
+    "body": [
+      "GetTileFlags(${1:Group : Byte}; ${2:Tile : Word});"
+    ]
+  },
+  "function ConvertIntegerToFlags(group : Byte;I : Cardinal) : TTileDataFlagSet;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ConvertIntegerToFlags",
+    "body": [
+      "ConvertIntegerToFlags(${1:group : Byte}; ${2:I : Cardinal});"
+    ]
+  },
+  "function GetLayerCount(x : Word;y : Word;WorldNum : Byte) : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetLayerCount",
+    "body": [
+      "GetLayerCount(${1:x : Word}; ${2:y : Word}; ${3:WorldNum : Byte});"
+    ]
+  },
+  "function GetLandTileData(Tile : Word) : TLandTileData;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetLandTileData",
+    "body": [
+      "GetLandTileData(${1:Tile : Word});"
+    ]
+  },
+  "function GetStaticTileData(Tile : Word) : TStaticTileData;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetStaticTileData",
+    "body": [
+      "GetStaticTileData(${1:Tile : Word});"
+    ]
+  },
+  "function ReadStaticsXY(X : Word;Y : Word;WorldNum : Byte) : TStaticCell;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ReadStaticsXY",
+    "body": [
+      "ReadStaticsXY(${1:X : Word}; ${2:Y : Word}; ${3:WorldNum : Byte});"
+    ]
+  },
+  "function GetSurfaceZ(X : Word;Y : Word;WorldNum : Byte) : ShortInt;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetSurfaceZ",
+    "body": [
+      "GetSurfaceZ(${1:X : Word}; ${2:Y : Word}; ${3:WorldNum : Byte});"
+    ]
+  },
+  "function GetMapCell(X : Word;Y : Word;WorldNum : Byte) : TMapCell;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetMapCell",
+    "body": [
+      "GetMapCell(${1:X : Word}; ${2:Y : Word}; ${3:WorldNum : Byte});"
+    ]
+  },
+  "function IsWorldCellPassable(CurrX : Word;CurrY : Word;Z : ShortInt;DestX : Word;DestY : Word;var DestZ : ShortInt;WorldNum : Byte) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsWorldCellPassable",
+    "body": [
+      "IsWorldCellPassable(${1:CurrX : Word}; ${2:CurrY : Word}; ${3:Z : ShortInt}; ${4:DestX : Word}; ${5:DestY : Word}; ${6:var DestZ : ShortInt}; ${7:WorldNum : Byte});"
+    ]
+  },
+  "function GetLandTilesArray(Xmin : Word;Ymin : Word;Xmax : Word;Ymax : Word;WorldNum : Byte;TileType : Word;var LandTilesArray : TFoundTilesArray) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetLandTilesArray",
+    "body": [
+      "GetLandTilesArray(${1:Xmin : Word}; ${2:Ymin : Word}; ${3:Xmax : Word}; ${4:Ymax : Word}; ${5:WorldNum : Byte}; ${6:TileType : Word}; ${7:var LandTilesArray : TFoundTilesArray});"
+    ]
+  },
+  "function GetLandTilesArrayEx(Xmin : Word;Ymin : Word;Xmax : Word;Ymax : Word;WorldNum : Byte;TileTypes : array of Word;var LandTilesArray : TFoundTilesArray) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetLandTilesArrayEx",
+    "body": [
+      "GetLandTilesArrayEx(${1:Xmin : Word}; ${2:Ymin : Word}; ${3:Xmax : Word}; ${4:Ymax : Word}; ${5:WorldNum : Byte}; ${6:TileTypes : array of Word}; ${7:var LandTilesArray : TFoundTilesArray});"
+    ]
+  },
+  "function GetStaticTilesArray(Xmin : Word;Ymin : Word;Xmax : Word;Ymax : Word;WorldNum : Byte;TileType : Word;var FoundTilesArray : TFoundTilesArray) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetStaticTilesArray",
+    "body": [
+      "GetStaticTilesArray(${1:Xmin : Word}; ${2:Ymin : Word}; ${3:Xmax : Word}; ${4:Ymax : Word}; ${5:WorldNum : Byte}; ${6:TileType : Word}; ${7:var FoundTilesArray : TFoundTilesArray});"
+    ]
+  },
+  "function GetStaticTilesArrayEx(Xmin : Word;Ymin : Word;Xmax : Word;Ymax : Word;WorldNum : Byte;TileTypes : array of Word;var FoundTilesArray : TFoundTilesArray) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetStaticTilesArrayEx",
+    "body": [
+      "GetStaticTilesArrayEx(${1:Xmin : Word}; ${2:Ymin : Word}; ${3:Xmax : Word}; ${4:Ymax : Word}; ${5:WorldNum : Byte}; ${6:TileTypes : array of Word}; ${7:var FoundTilesArray : TFoundTilesArray});"
+    ]
+  },
+  "procedure SetSilentMode(Value : Boolean);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetSilentMode",
+    "body": [
+      "SetSilentMode(${1:Value : Boolean});"
+    ]
+  },
+  "procedure SetEasyUO(num : Integer;Regvalue : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetEasyUO",
+    "body": [
+      "SetEasyUO(${1:num : Integer}; ${2:Regvalue : String});"
+    ]
+  },
+  "function GetEasyUO(num : Integer) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetEasyUO",
+    "body": [
+      "GetEasyUO(${1:num : Integer});"
+    ]
+  },
+  "function EUO2Type(EUO : String) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "EUO2Type",
+    "body": [
+      "EUO2Type(${1:EUO : String});"
+    ]
+  },
+  "function EUO2ID(EUO : String) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "EUO2ID",
+    "body": [
+      "EUO2ID(${1:EUO : String});"
+    ]
+  },
+  "procedure RequestStats(ObjID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RequestStats",
+    "body": [
+      "RequestStats(${1:ObjID : Cardinal});"
+    ]
+  },
+  "procedure HelpRequest;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "HelpRequest",
+    "body": [
+      "HelpRequest"
+    ]
+  },
+  "procedure QuestRequest;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "QuestRequest",
+    "body": [
+      "QuestRequest"
+    ]
+  },
+  "procedure RenameMobile(Mob_ID : Cardinal;NewName : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RenameMobile",
+    "body": [
+      "RenameMobile(${1:Mob_ID : Cardinal}; ${2:NewName : String});"
+    ]
+  },
+  "procedure OpenDoor;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "OpenDoor",
+    "body": [
+      "OpenDoor"
+    ]
+  },
+  "procedure Bow;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Bow",
+    "body": [
+      "Bow"
+    ]
+  },
+  "procedure Salute;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Salute",
+    "body": [
+      "Salute"
+    ]
+  },
+  "function AddFigure(const figure : TMapFigure) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AddFigure",
+    "body": [
+      "AddFigure(${1:const figure : TMapFigure});"
+    ]
+  },
+  "function RemoveFigure(id : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RemoveFigure",
+    "body": [
+      "RemoveFigure(${1:id : Cardinal});"
+    ]
+  },
+  "function UpdateFigure(id : Cardinal;const figure : TMapFigure) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UpdateFigure",
+    "body": [
+      "UpdateFigure(${1:id : Cardinal}; ${2:const figure : TMapFigure});"
+    ]
+  },
+  "procedure ClearFigures;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearFigures",
+    "body": [
+      "ClearFigures"
+    ]
+  },
+  "function CheckLag(timeoutMS : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CheckLag",
+    "body": [
+      "CheckLag(${1:timeoutMS : Integer});"
+    ]
+  },
+  "procedure SetRunUnmountTimer(Value : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetRunUnmountTimer",
+    "body": [
+      "SetRunUnmountTimer(${1:Value : Word});"
+    ]
+  },
+  "procedure SetWalkMountTimer(Value : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetWalkMountTimer",
+    "body": [
+      "SetWalkMountTimer(${1:Value : Word});"
+    ]
+  },
+  "procedure SetRunMountTimer(Value : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetRunMountTimer",
+    "body": [
+      "SetRunMountTimer(${1:Value : Word});"
+    ]
+  },
+  "procedure SetWalkUnmountTimer(Value : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetWalkUnmountTimer",
+    "body": [
+      "SetWalkUnmountTimer(${1:Value : Word});"
+    ]
+  },
+  "function GetRunUnMountTimer : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetRunUnMountTimer",
+    "body": [
+      "GetRunUnMountTimer"
+    ]
+  },
+  "function GetWalkMountTimer : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetWalkMountTimer",
+    "body": [
+      "GetWalkMountTimer"
+    ]
+  },
+  "function GetRunMountTimer : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetRunMountTimer",
+    "body": [
+      "GetRunMountTimer"
+    ]
+  },
+  "function GetWalkUnmountTimer : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetWalkUnmountTimer",
+    "body": [
+      "GetWalkUnmountTimer"
+    ]
+  },
+  "function GetNextStepZ(CurrX : Word;CurrY : Word;DestX : Word;DestY : Word;WorldNum : Byte;Z : ShortInt) : ShortInt;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetNextStepZ",
+    "body": [
+      "GetNextStepZ(${1:CurrX : Word}; ${2:CurrY : Word}; ${3:DestX : Word}; ${4:DestY : Word}; ${5:WorldNum : Byte}; ${6:Z : ShortInt});"
+    ]
+  },
+  "function Dist(X1 : Word;Y1 : Word;X2 : Word;Y2 : Word) : Word;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Dist",
+    "body": [
+      "Dist(${1:X1 : Word}; ${2:Y1 : Word}; ${3:X2 : Word}; ${4:Y2 : Word});"
+    ]
+  },
+  "function CalcDir(Xfrom : Integer;Yfrom : Integer;Xto : Integer;Yto : Integer) : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CalcDir",
+    "body": [
+      "CalcDir(${1:Xfrom : Integer}; ${2:Yfrom : Integer}; ${3:Xto : Integer}; ${4:Yto : Integer});"
+    ]
+  },
+  "function Raw_Move(Direction : Byte;Running : Boolean) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Raw_Move",
+    "body": [
+      "Raw_Move(${1:Direction : Byte}; ${2:Running : Boolean});"
+    ]
+  },
+  "function Step(Direction : Byte;Running : Boolean) : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Step",
+    "body": [
+      "Step(${1:Direction : Byte}; ${2:Running : Boolean});"
+    ]
+  },
+  "function StepQ(Direction : Byte;Running : Boolean) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "StepQ",
+    "body": [
+      "StepQ(${1:Direction : Byte}; ${2:Running : Boolean});"
+    ]
+  },
+  "procedure SetBadLocation(X : Word;Y : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetBadLocation",
+    "body": [
+      "SetBadLocation(${1:X : Word}; ${2:Y : Word});"
+    ]
+  },
+  "procedure SetGoodLocation(X : Word;Y : Word);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetGoodLocation",
+    "body": [
+      "SetGoodLocation(${1:X : Word}; ${2:Y : Word});"
+    ]
+  },
+  "procedure ClearBadLocationList;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearBadLocationList",
+    "body": [
+      "ClearBadLocationList"
+    ]
+  },
+  "procedure SetBadObject(ObjType : Word;Color : Word;Radius : Byte);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetBadObject",
+    "body": [
+      "SetBadObject(${1:ObjType : Word}; ${2:Color : Word}; ${3:Radius : Byte});"
+    ]
+  },
+  "procedure ClearBadObjectList;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearBadObjectList",
+    "body": [
+      "ClearBadObjectList"
+    ]
+  },
+  "procedure MoverStop;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MoverStop",
+    "body": [
+      "MoverStop"
+    ]
+  },
+  "function MoveXY(Xdst : Word;Ydst : Word;Optimized : Boolean;Accuracy : Integer;Running : Boolean) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MoveXY",
+    "body": [
+      "MoveXY(${1:Xdst : Word}; ${2:Ydst : Word}; ${3:Optimized : Boolean}; ${4:Accuracy : Integer}; ${5:Running : Boolean});"
+    ]
+  },
+  "function newMoveXY(Xdst : Word;Ydst : Word;Optimized : Boolean;Accuracy : Integer;Running : Boolean) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "newMoveXY",
+    "body": [
+      "newMoveXY(${1:Xdst : Word}; ${2:Ydst : Word}; ${3:Optimized : Boolean}; ${4:Accuracy : Integer}; ${5:Running : Boolean});"
+    ]
+  },
+  "function MoveXYZ(Xdst : Word;Ydst : Word;Zdst : ShortInt;AccuracyXY : Integer;AccuracyZ : Integer;Running : Boolean) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MoveXYZ",
+    "body": [
+      "MoveXYZ(${1:Xdst : Word}; ${2:Ydst : Word}; ${3:Zdst : ShortInt}; ${4:AccuracyXY : Integer}; ${5:AccuracyZ : Integer}; ${6:Running : Boolean});"
+    ]
+  },
+  "function GetPathArray(DestX : Word;DestY : Word;Optimized : Boolean;Accuracy : Integer;var PathArray : TPathArray) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetPathArray",
+    "body": [
+      "GetPathArray(${1:DestX : Word}; ${2:DestY : Word}; ${3:Optimized : Boolean}; ${4:Accuracy : Integer}; ${5:var PathArray : TPathArray});"
+    ]
+  },
+  "function GetPathArray3D(StartX : Word;StartY : Word;StartZ : ShortInt;FinishX : Word;FinishY : Word;FinishZ : ShortInt;WorldNum : Byte;AccuracyXY : Integer;AccuracyZ : Integer;Run : Boolean;var PathArray : TPathArray) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetPathArray3D",
+    "body": [
+      "GetPathArray3D(${1:StartX : Word}; ${2:StartY : Word}; ${3:StartZ : ShortInt}; ${4:FinishX : Word}; ${5:FinishY : Word}; ${6:FinishZ : ShortInt}; ${7:WorldNum : Byte}; ${8:AccuracyXY : Integer}; ${9:AccuracyZ : Integer}; ${10:Run : Boolean}; ${11:var PathArray : TPathArray});"
+    ]
+  },
+  "function GetTooltip(ObjID : Cardinal) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetTooltip",
+    "body": [
+      "GetTooltip(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function SetCatchBag(ObjID : Cardinal) : Byte;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetCatchBag",
+    "body": [
+      "SetCatchBag(${1:ObjID : Cardinal});"
+    ]
+  },
+  "procedure UnsetCatchBag;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UnsetCatchBag",
+    "body": [
+      "UnsetCatchBag"
+    ]
+  },
+  "function EmptyContainer(Container : Cardinal;DestContainer : Cardinal;DelayMS : Word) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "EmptyContainer",
+    "body": [
+      "EmptyContainer(${1:Container : Cardinal}; ${2:DestContainer : Cardinal}; ${3:DelayMS : Word});"
+    ]
+  },
+  "procedure SetStatState(statNum : Byte;statState : Byte);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetStatState",
+    "body": [
+      "SetStatState(${1:statNum : Byte}; ${2:statState : Byte});"
+    ]
+  },
+  "procedure SetStatLockState(statNum : Byte;statState : Byte);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetStatLockState",
+    "body": [
+      "SetStatLockState(${1:statNum : Byte}; ${2:statState : Byte});"
+    ]
+  },
+  "function GetStatLockState(statNum : Byte) : ShortInt;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetStatLockState",
+    "body": [
+      "GetStatLockState(${1:statNum : Byte});"
+    ]
+  },
+  "function GetSelfHandle : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetSelfHandle",
+    "body": [
+      "GetSelfHandle"
+    ]
+  },
+  "function GetStaticArt(Id : Cardinal;Hue : Word) : TBitmap;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetStaticArt",
+    "body": [
+      "GetStaticArt(${1:Id : Cardinal}; ${2:Hue : Word});"
+    ]
+  },
+  "function CheckLOS(xf : Integer;yf : Integer;zf : Integer;xt : Integer;yt : Integer;zt : Integer;WorldNum : Byte) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CheckLOS",
+    "body": [
+      "CheckLOS(${1:xf : Integer}; ${2:yf : Integer}; ${3:zf : Integer}; ${4:xt : Integer}; ${5:yt : Integer}; ${6:zt : Integer}; ${7:WorldNum : Byte});"
+    ]
+  },
+  "procedure GetContextMenu(var list : TStringList);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetContextMenu",
+    "body": [
+      "GetContextMenu(${1:var list : TStringList});"
+    ]
+  },
+  "procedure ClearContextMenu;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClearContextMenu",
+    "body": [
+      "ClearContextMenu"
+    ]
+  },
+  "function MobileCanBeRenamed(Mob_ID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "MobileCanBeRenamed",
+    "body": [
+      "MobileCanBeRenamed(${1:Mob_ID : Cardinal});"
+    ]
+  },
+  "procedure ClientPrint(Text : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClientPrint",
+    "body": [
+      "ClientPrint(${1:Text : String});"
+    ]
+  },
+  "procedure ClientPrintEx(SenderID : Cardinal;Color : Word;Font : Word;Text : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClientPrintEx",
+    "body": [
+      "ClientPrintEx(${1:SenderID : Cardinal}; ${2:Color : Word}; ${3:Font : Word}; ${4:Text : String});"
+    ]
+  },
+  "function GetQuestArrow(var point : TPoint) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetQuestArrow",
+    "body": [
+      "GetQuestArrow(${1:var point : TPoint});"
+    ]
+  },
+  "procedure InviteToParty(ID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "InviteToParty",
+    "body": [
+      "InviteToParty(${1:ID : Cardinal});"
+    ]
+  },
+  "procedure RemoveFromParty(ID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "RemoveFromParty",
+    "body": [
+      "RemoveFromParty(${1:ID : Cardinal});"
+    ]
+  },
+  "procedure PartyPrivateMessageTo(ID : Cardinal;Msg : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PartyPrivateMessageTo",
+    "body": [
+      "PartyPrivateMessageTo(${1:ID : Cardinal}; ${2:Msg : String});"
+    ]
+  },
+  "procedure PartySay(Msg : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PartySay",
+    "body": [
+      "PartySay(${1:Msg : String});"
+    ]
+  },
+  "procedure PartyCanLootMe(Value : Boolean);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PartyCanLootMe",
+    "body": [
+      "PartyCanLootMe(${1:Value : Boolean});"
+    ]
+  },
+  "procedure PartyAcceptInvite;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PartyAcceptInvite",
+    "body": [
+      "PartyAcceptInvite"
+    ]
+  },
+  "procedure PartyDeclineInvite;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PartyDeclineInvite",
+    "body": [
+      "PartyDeclineInvite"
+    ]
+  },
+  "procedure PartyLeave;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PartyLeave",
+    "body": [
+      "PartyLeave"
+    ]
+  },
+  "function PartyMembersList : TStringList;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "PartyMembersList",
+    "body": [
+      "PartyMembersList"
+    ]
+  },
+  "function InParty : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "InParty",
+    "body": [
+      "InParty"
+    ]
+  },
+  "function GetToolTipRec(ObjID : Cardinal) : TClilocRec;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetToolTipRec",
+    "body": [
+      "GetToolTipRec(${1:ObjID : Cardinal});"
+    ]
+  },
+  "function GetBuffBarInfo : TBuffBarInfo;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetBuffBarInfo",
+    "body": [
+      "GetBuffBarInfo"
+    ]
+  },
+  "function GetClilocByID(ClilocID : Cardinal) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetClilocByID",
+    "body": [
+      "GetClilocByID(${1:ClilocID : Cardinal});"
+    ]
+  },
+  "procedure CloseClientUIWindow(UIWindowType : TUIWindowType;ID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CloseClientUIWindow",
+    "body": [
+      "CloseClientUIWindow(${1:UIWindowType : TUIWindowType}; ${2:ID : Cardinal});"
+    ]
+  },
+  "function IsActiveSpellAbility(SpellName : String) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "IsActiveSpellAbility",
+    "body": [
+      "IsActiveSpellAbility(${1:SpellName : String});"
+    ]
+  },
+  "procedure ClientRequestObjectTarget;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClientRequestObjectTarget",
+    "body": [
+      "ClientRequestObjectTarget"
+    ]
+  },
+  "procedure ClientRequestTileTarget;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClientRequestTileTarget",
+    "body": [
+      "ClientRequestTileTarget"
+    ]
+  },
+  "function ClientTargetResponsePresent : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClientTargetResponsePresent",
+    "body": [
+      "ClientTargetResponsePresent"
+    ]
+  },
+  "function WaitForClientTargetResponse(MaxWaitTimeMS : Integer) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "WaitForClientTargetResponse",
+    "body": [
+      "WaitForClientTargetResponse(${1:MaxWaitTimeMS : Integer});"
+    ]
+  },
+  "function ClientTargetResponse : TTargetInfo;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClientTargetResponse",
+    "body": [
+      "ClientTargetResponse"
+    ]
+  },
+  "procedure UseVirtue(VirtueName : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "UseVirtue",
+    "body": [
+      "UseVirtue(${1:VirtueName : String});"
+    ]
+  },
+  "procedure ReqVirtuesGump;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ReqVirtuesGump",
+    "body": [
+      "ReqVirtuesGump"
+    ]
+  },
+  "procedure GetMenuItems(Caption : String;var TL : TStringList);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetMenuItems",
+    "body": [
+      "GetMenuItems(${1:Caption : String}; ${2:var TL : TStringList});"
+    ]
+  },
+  "function GetMenuItemsEx(Caption : String) : TMenuResponses;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetMenuItemsEx",
+    "body": [
+      "GetMenuItemsEx(${1:Caption : String});"
+    ]
+  },
+  "procedure GetLastMenuItems(var TL : TStringList);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetLastMenuItems",
+    "body": [
+      "GetLastMenuItems(${1:var TL : TStringList});"
+    ]
+  },
+  "function GameServerIPString : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GameServerIPString",
+    "body": [
+      "GameServerIPString"
+    ]
+  },
+  "procedure CloseClientGump(ID : Cardinal);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "CloseClientGump",
+    "body": [
+      "CloseClientGump(${1:ID : Cardinal});"
+    ]
+  },
+  "function ClientHide(ID : Cardinal) : Boolean;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ClientHide",
+    "body": [
+      "ClientHide(${1:ID : Cardinal});"
+    ]
+  },
+  "function InputBox(ACaption : String;APrompt : String;ADefault : String) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "InputBox",
+    "body": [
+      "InputBox(${1:ACaption : String}; ${2:APrompt : String}; ${3:ADefault : String});"
+    ]
+  },
+  "procedure AddToDebugJournal(Msg : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "AddToDebugJournal",
+    "body": [
+      "AddToDebugJournal(${1:Msg : String});"
+    ]
+  },
+  "function GetMultis(var items : TMultiItems) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetMultis",
+    "body": [
+      "GetMultis(${1:var items : TMultiItems});"
+    ]
+  },
+  "function ExtChangeProfile(ProfileName : String;ShardName : String = '';CharName : String = '') : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ExtChangeProfile",
+    "body": [
+      "ExtChangeProfile(${1:ProfileName : String}; ${2:ShardName : String = ''}; ${3:CharName : String = ''});"
+    ]
+  },
+  "procedure SetARExtParams(ShardName : String = '';CharName : String = '';UseAtEveryConnect : Boolean = False);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SetARExtParams",
+    "body": [
+      "SetARExtParams(${1:ShardName : String = ''}; ${2:CharName : String = ''}; ${3:UseAtEveryConnect : Boolean = False});"
+    ]
+  },
+  "function SendMessageToWindow(hWnd : Cardinal;CharID : Cardinal;value : TByteArray) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "SendMessageToWindow",
+    "body": [
+      "SendMessageToWindow(${1:hWnd : Cardinal}; ${2:CharID : Cardinal}; ${3:value : TByteArray});"
+    ]
+  },
+  "procedure GlobalChatJoinChannel(ChName : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GlobalChatJoinChannel",
+    "body": [
+      "GlobalChatJoinChannel(${1:ChName : String});"
+    ]
+  },
+  "procedure GlobalChatLeaveChannel;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GlobalChatLeaveChannel",
+    "body": [
+      "GlobalChatLeaveChannel"
+    ]
+  },
+  "procedure GlobalChatSendMsg(MsgText : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GlobalChatSendMsg",
+    "body": [
+      "GlobalChatSendMsg(${1:MsgText : String});"
+    ]
+  },
+  "function GlobalChatActiveChannel : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GlobalChatActiveChannel",
+    "body": [
+      "GlobalChatActiveChannel"
+    ]
+  },
+  "procedure GlobalChatChannelsList(var TL : TStringList);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GlobalChatChannelsList",
+    "body": [
+      "GlobalChatChannelsList(${1:var TL : TStringList});"
+    ]
+  },
+  "procedure DumpObjectsCache;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "DumpObjectsCache",
+    "body": [
+      "DumpObjectsCache"
+    ]
+  },
+  "function GetRec2(z : TClilocRec) : Integer;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "GetRec2",
+    "body": [
+      "GetRec2(${1:z : TClilocRec});"
+    ]
+  },
+  "function ConvertFlagsToInteger(group : Byte;var I : TTileDataFlagSet) : Cardinal;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "ConvertFlagsToInteger",
+    "body": [
+      "ConvertFlagsToInteger(${1:group : Byte}; ${2:var I : TTileDataFlagSet});"
+    ]
+  },
+  "function Test1(var S : String) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Test1",
+    "body": [
+      "Test1(${1:var S : String});"
+    ]
+  },
+  "function Test2(var S : Single) : String;": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Test2",
+    "body": [
+      "Test2(${1:var S : Single});"
+    ]
+  },
+  "procedure Test3(var S : String);": {
+    "scope": "objectpascal, pascal, ObjectPascal",
+    "prefix": "Test3",
+    "body": [
+      "Test3(${1:var S : String});"
+    ]
+  }
 }
